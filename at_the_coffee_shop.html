@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Phrases</title>
+    <style>
+        table {width: 100%; border-collapse: collapse;}
+        th, td {border: 1px solid black; padding: 8px; text-align: left;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #e6f7ff;}
+        th {background-color: #4CAF50; color: white;}
+    </style>
+    <script>
+        function playAudio(audio_file) {
+            var audio = new Audio(audio_file);
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <h1>French Phrases</h1>
+    <table>
+        <tr><th>English Phrase</th><th>French Translation</th><th>Listen</th></tr>
+<tr><td>"Hello, I would like a coffee, please."</td><td>"Bonjour, je voudrais un café, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_1.mp3')">Play</button></td></tr><tr><td>"I'd like a cappuccino/latte/espresso, please."</td><td>"Je voudrais un cappuccino / latte / expresso, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_2.mp3')">Play</button></td></tr><tr><td>"A small/medium/large, please."</td><td>"Un petit / moyen / grand, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_3.mp3')">Play</button></td></tr><tr><td>"To have here/to go, please."</td><td>"Avoir ici / Pour aller, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_4.mp3')">Play</button></td></tr><tr><td>"With milk/sugar, please."</td><td>"Avec du lait / du sucre, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_5.mp3')">Play</button></td></tr><tr><td>"Do you have any pastries/croissants?"</td><td>"Avez-vous des pâtisseries / croissants?"</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_6.mp3')">Play</button></td></tr><tr><td>"I'll have a croissant, please."</td><td>"J'aurai un croissant, s'il vous plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_7.mp3')">Play</button></td></tr><tr><td>"How much is it?"</td><td>"Combien ça coûte?"</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_8.mp3')">Play</button></td></tr><tr><td>"Do you have Wi-Fi?"</td><td>"Avez-vous le Wi-Fi?"</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_9.mp3')">Play</button></td></tr><tr><td>"Is there a restroom/toilet?"</td><td>"Y a-t-il des toilettes / toilettes?"</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_10.mp3')">Play</button></td></tr><tr><td>"Thank you very much."</td><td>"Merci beaucoup."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_11.mp3')">Play</button></td></tr><tr><td>"Please."</td><td>"S'il te plaît."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_12.mp3')">Play</button></td></tr><tr><td>"Excuse me."</td><td>"Excusez-moi."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_13.mp3')">Play</button></td></tr><tr><td>"I don't speak French very well."</td><td>"Je ne parle pas très bien français."</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_14.mp3')">Play</button></td></tr><tr><td>"Could you please speak slowly?"</td><td>"Pourriez-vous s'il vous plaît parler lentement?"</td><td><button onclick="playAudio('at_the_coffee_shop/audio/phrase_15.mp3')">Play</button></td></tr>
+    </table>
+</body>
+</html>
