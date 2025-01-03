@@ -8,4 +8,5 @@ Adding a lesson
 - run python3 gen_data.py lesson_name (for example lesson3)
 - run python3 gen_html.py lesson_name (for example lesson3)
 - Update index.html with a new link by adding a new line like <a href="lesson1.html"></h2>Lesson 1<h2></a>
+- If you want to test locally: Open index.html in local file manager
 - In Github Desktop, press commit in the bottom left, and Push origin at the top
