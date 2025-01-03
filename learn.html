@@ -15,9 +15,9 @@
         document.getElementById('speakButton').addEventListener('click', () => {
             // Check if the browser supports the Web Speech API
             if ('speechSynthesis' in window) {
-                const message = new SpeechSynthesisUtterance("Hello, World!");
+                const message = new SpeechSynthesisUtterance("deux cafés s'il vous plaît!");
                 // Set optional parameters like language, pitch, and rate
-                message.lang = "en-US"; // Language (e.g., en-US, fr-FR)
+                message.lang = "fr-FR"; // Language (e.g., en-US, fr-FR)
                 message.pitch = 1; // Default pitch
                 message.rate = 1; // Default speed
                 speechSynthesis.speak(message); // Speak the message
