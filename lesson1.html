@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Phrases</title>
+    <style>
+        table {width: 100%; border-collapse: collapse;}
+        th, td {border: 1px solid black; padding: 8px; text-align: left;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #e6f7ff;}
+        th {background-color: #4CAF50; color: white;}
+    </style>
+    <script>
+        function playAudio(audio_file) {
+            var audio = new Audio(audio_file);
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <h1>French Phrases</h1>
+    <table>
+        <tr><th>English Phrase</th><th>French Translation</th><th>Listen</th></tr>
+<tr><td>I have a dog</td><td>J'ai un chien</td><td><button onclick="playAudio('lesson1/audio/phrase_1.mp3')">Play</button></td></tr><tr><td>How much is this</td><td>Combien ça coûte</td><td><button onclick="playAudio('lesson1/audio/phrase_2.mp3')">Play</button></td></tr><tr><td>What time is it</td><td>Quelle heure est-il</td><td><button onclick="playAudio('lesson1/audio/phrase_3.mp3')">Play</button></td></tr><tr><td>How far is station</td><td>Jusqu'où se trouve la station</td><td><button onclick="playAudio('lesson1/audio/phrase_4.mp3')">Play</button></td></tr><tr><td>How to get to city center</td><td>Comment se rendre au centre-ville</td><td><button onclick="playAudio('lesson1/audio/phrase_5.mp3')">Play</button></td></tr>
+    </table>
+</body>
+</html>
