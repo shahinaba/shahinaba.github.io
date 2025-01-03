@@ -1,0 +1,9 @@
+Adding a lesson
+
+1. Create a new lesson directory- for example lesson1
+2. Create a phrases.txt file inside the new lesson directory- for example lesson1/phrases.txt
+3. Inside the phrases.txt, put one english phrase per line
+4. run python3 gen_data.py lesson_name (for example lesson3)
+5. run python3 gen_html.py lesson_name (for example lesson3)
+6. Update index.html with a new link by adding a new line like <a href="lesson1.html">Lesson 1</a>
+7. In Github Desktop, press commit in the bottom left, and Push origin at the top
