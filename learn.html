@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Speech API Example</title>
+</head>
+<body>
+    <h1>Web Speech API: Text-to-Speech</h1>
+    <p>Click the button below to hear "Hello, World!" spoken aloud.</p>
+    
+    <button id="speakButton">Speak</button>
+    
+    <script>
+        document.getElementById('speakButton').addEventListener('click', () => {
+            // Check if the browser supports the Web Speech API
+            if ('speechSynthesis' in window) {
+                const message = new SpeechSynthesisUtterance("Hello, World!");
+                // Set optional parameters like language, pitch, and rate
+                message.lang = "en-US"; // Language (e.g., en-US, fr-FR)
+                message.pitch = 1; // Default pitch
+                message.rate = 1; // Default speed
+                speechSynthesis.speak(message); // Speak the message
+            } else {
+                alert("Sorry, your browser does not support text-to-speech.");
+            }
+        });
+    </script>
+</body>
+</html>
