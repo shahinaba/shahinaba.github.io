@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Phrases</title>
+    <style>
+        table {width: 100%; border-collapse: collapse;}
+        th, td {border: 1px solid black; padding: 8px; text-align: left;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #e6f7ff;}
+        th {background-color: #4CAF50; color: white;}
+    </style>
+    <script>
+        function playAudio(audio_file) {
+            var audio = new Audio(audio_file);
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <h1>French Phrases</h1>
+    <table>
+        <tr><th>English Phrase</th><th>French Translation</th><th>Listen</th></tr>
+<tr><td>Where is the nearest bus stop?</td><td>Où se trouve l'arrêt de bus le plus proche?</td><td><button onclick="playAudio('public_transport/audio/phrase_1.mp3')">Play</button></td></tr><tr><td>What time is the next train?</td><td>À quelle heure est le prochain train?</td><td><button onclick="playAudio('public_transport/audio/phrase_2.mp3')">Play</button></td></tr><tr><td>How much is a ticket?</td><td>Combien coûte un billet?</td><td><button onclick="playAudio('public_transport/audio/phrase_3.mp3')">Play</button></td></tr><tr><td>Where can I buy a ticket?</td><td>Où peut-on acheter un billet ?</td><td><button onclick="playAudio('public_transport/audio/phrase_4.mp3')">Play</button></td></tr><tr><td>Is this bus going to [destination]?</td><td>Ce bus va-t-il à [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_5.mp3')">Play</button></td></tr><tr><td>How many stops until [destination]?</td><td>Combien d'arrêts jusqu'à [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_6.mp3')">Play</button></td></tr><tr><td>Can you tell me when we reach [destination]?</td><td>Pouvez-vous me dire quand nous atteignons [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_7.mp3')">Play</button></td></tr><tr><td>Where is the subway entrance?</td><td>Où est l'entrée du métro?</td><td><button onclick="playAudio('public_transport/audio/phrase_8.mp3')">Play</button></td></tr><tr><td>Does this train go to the airport?</td><td>Ce train va-t-il à l'aéroport?</td><td><button onclick="playAudio('public_transport/audio/phrase_9.mp3')">Play</button></td></tr><tr><td>Is this the right platform for the train to [destination]?</td><td>Est-ce la bonne plate-forme pour le train pour [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_10.mp3')">Play</button></td></tr><tr><td>What time is the last train?</td><td>À quelle heure est le dernier train?</td><td><button onclick="playAudio('public_transport/audio/phrase_11.mp3')">Play</button></td></tr><tr><td>Do I need to transfer to another line?</td><td>Dois-je transférer vers une autre ligne?</td><td><button onclick="playAudio('public_transport/audio/phrase_12.mp3')">Play</button></td></tr><tr><td>Is there an express bus to [destination]?</td><td>Y a-t-il un bus express pour [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_13.mp3')">Play</button></td></tr><tr><td>Where is the taxi stand?</td><td>Où est la station de taxis?</td><td><button onclick="playAudio('public_transport/audio/phrase_14.mp3')">Play</button></td></tr><tr><td>Do I need exact change for the bus?</td><td>Ai-je besoin de changement exact pour le bus?</td><td><button onclick="playAudio('public_transport/audio/phrase_15.mp3')">Play</button></td></tr><tr><td>Is there a timetable available?</td><td>Y a-t-il un calendrier disponible?</td><td><button onclick="playAudio('public_transport/audio/phrase_16.mp3')">Play</button></td></tr><tr><td>Where can I find a map of the subway?</td><td>Où puis-je trouver une carte du métro?</td><td><button onclick="playAudio('public_transport/audio/phrase_17.mp3')">Play</button></td></tr><tr><td>Can I pay with a credit card?</td><td>Puis-je payer avec une carte de crédit?</td><td><button onclick="playAudio('public_transport/audio/phrase_18.mp3')">Play</button></td></tr><tr><td>Do you have a day pass for unlimited travel?</td><td>Avez-vous un laissez-passer d'une journée pour un voyage illimité?</td><td><button onclick="playAudio('public_transport/audio/phrase_19.mp3')">Play</button></td></tr><tr><td>How long is the ride to [destination]?</td><td>Combien de temps dure le trajet vers [destination]?</td><td><button onclick="playAudio('public_transport/audio/phrase_20.mp3')">Play</button></td></tr>
+    </table>
+</body>
+</html>
