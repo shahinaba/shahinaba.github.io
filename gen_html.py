@@ -37,7 +37,7 @@ def generate_html(phrase_audio_tuple, html_output_file):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson_name</title>
+    <title>French Phrases</title>
     <style>
         table {width: 100%; border-collapse: collapse;}
         th, td {border: 1px solid black; padding: 8px; text-align: left;}
@@ -53,7 +53,7 @@ def generate_html(phrase_audio_tuple, html_output_file):
     </script>
 </head>
 <body>
-    <h1>lesson_name</h1>
+    <h1>French Phrases</h1>
     <table>
         <tr><th>English Phrase</th><th>French Translation</th><th>Listen</th></tr>
 """)
