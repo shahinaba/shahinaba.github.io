@@ -1,0 +1,39 @@
+Where is the nearest bus stop?
+
+What time is the next train?
+
+How much is a ticket?
+
+Where can I buy a ticket?
+
+Is this bus going to [destination]?
+
+How many stops until [destination]?
+
+Can you tell me when we reach [destination]?
+
+Where is the subway entrance?
+
+Does this train go to the airport?
+
+Is this the right platform for the train to [destination]?
+
+What time is the last train?
+
+Do I need to transfer to another line?
+
+Is there an express bus to [destination]?
+
+Where is the taxi stand?
+
+Do I need exact change for the bus?
+
+Is there a timetable available?
+
+Where can I find a map of the subway?
+
+Can I pay with a credit card?
+
+Do you have a day pass for unlimited travel?
+
+How long is the ride to [destination]?

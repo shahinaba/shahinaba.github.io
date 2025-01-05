@@ -1,0 +1,24 @@
+[
+  {
+    "language" : "French",
+    "code" : "fr",
+    "topics" : [
+      {
+        "name" : "Airport",
+        "phrase_file" : "airport.txt"
+      },
+      {
+        "name" : "Hotel",
+        "phrase_file" : "hotel.txt"
+      },
+      {
+        "name" : "Restaurant",
+        "phrase_file" : "restaurant.txt"
+      }
+    ]
+  },
+  {
+    "name" : "German",
+    "code" : "de"
+  }
+]
