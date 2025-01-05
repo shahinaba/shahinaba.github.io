@@ -9,13 +9,49 @@
         "phrases_file" : "airport.txt"
       },
       {
+        "name" : "Airport 2",
+        "phrases_file" : "airport_2.txt"
+      },
+      {
+        "name" : "Coffee Shop",
+        "phrases_file" : "coffee_shop.txt"
+      },
+      {
+        "name" : "Coffee Shop 2",
+        "phrases_file" : "coffee_shop_2.txt"
+      },
+      {
+        "name" : "Department Store",
+        "phrases_file" : "department_store.txt"
+      },
+      {
+        "name" : "Grocery Store",
+        "phrases_file" : "grocery_store.txt"
+      },
+      {
         "name" : "Hotel",
         "phrases_file" : "hotel.txt"
       },
       {
+        "name" : "Public Transportation",
+        "phrases_file" : "public_transportation.txt"
+      },
+      {
         "name" : "Restaurant",
         "phrases_file" : "restaurant.txt"
-      }
+      },
+      {
+        "name" : "Tourit Info",
+        "phrases_file" : "tourist_info.txt"
+      },
+      {
+        "name" : "Train Station",
+        "phrases_file" : "train_station.txt"
+      },
+      {
+        "name" : "Other",
+        "phrases_file" : "other.txt"
+      },
     ]
   },
   {
@@ -23,10 +59,6 @@
     "language_code" : "de",
     "folder" : "german",
     "topics" : [
-      {
-        "name" : "Airport",
-        "phrases_file" : "airport.txt"
-      }
     ]
   }
 ]
