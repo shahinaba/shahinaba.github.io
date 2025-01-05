@@ -25,21 +25,25 @@ def _print_lessons():
 
 def _generate_lesson_content():
     lessons = _load_topics()
+    numLessons = len(lessons)
     for lid, language in enumerate(lessons):
         _print_div()
+        lessonNum = lid + 1
         name = language['name']
         languageCode = language['language_code']
         folder = language["folder"]
         topics = language['topics']
-        print(f"({lid+1}/{len(lessons)}) {name}...")
+        numTopics = len(topics)
+        print(f"({lessonNum}/{numLessons}) {name}...")
         print(f"    Language Code: {languageCode}")
         print(f"    Folder: {folder}")
         print("    Topics:")
         for tidx, topic in enumerate(topics):
+            topicNum = tidx + 1
             topicName = topic['name']
             phrasesFile = topic['phrases_file']
             fullPhrasesFile = f"{folder}/{phrasesFile}"
-            print(f"\t({tidx+1}/{len(topics)}) Generating content for {topicName} in {fullPhrasesFile}...")
+            print(f"\t({topicNum}/{numTopics}) Generating content for {topicName} in {fullPhrasesFile}...")
             
             
 
