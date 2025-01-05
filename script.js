@@ -463,8 +463,6 @@ function createCollapsible(title, headerClass) {
             <td>${item.phrase.en}</td>
             <td>${item.phrase[languageCode]}</td>
             <td>
-              <!-- Single “Play” button (English vs. second language depends on your data) -->
-              <button class="play-btn" data-lang="en" data-audio="${item.audio.en}">Play EN</button>
               <button class="play-btn" data-lang="${languageCode}" data-audio="${item.audio[languageCode]}">Play ${language.language}</button>
             </td>
           `;

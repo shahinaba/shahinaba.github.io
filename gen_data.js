@@ -2189,6 +2189,571 @@ const genData = [
                 ]
             },
             {
+                "name": "Months and Week Days",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "January",
+                            "fr": "Janvier"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/86f5978d9b80124f509bdb71786e929e.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/101e2d41e64f7be6847251ee535b351b.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "February",
+                            "fr": "F\u00e9vrier"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/659e59f062c75f81259d22786d6c44aa.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/0fdabc3f3cc2d5af99bed69aa5320258.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "March",
+                            "fr": "Mars"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/fa3e5edac607a88d8fd7ecb9d6d67424.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/671f028142280b556a85ffdd90e0a43d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "April",
+                            "fr": "Avril"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/3fcf026bbfffb63fb24b8de9d0446949.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/c0a0241f164dd0ad20cc56210aca2aae.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "May",
+                            "fr": "Peut"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/195fbb57ffe7449796d23466085ce6d8.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/9ea309e1fdd341882f68610628a1214a.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "June",
+                            "fr": "Juin"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/688937ccaf2a2b0c45a1c9bbba09698d.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/f43f72e3531764b7770c74240f5a5d3a.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "July",
+                            "fr": "Juillet"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/1b539f6f34e8503c97f6d3421346b63c.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/7cf065346fc6c66e18248c74f14d5fd2.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "August",
+                            "fr": "Ao\u00fbt"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/41ba70891fb6f39327d8ccb9b1dafb84.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/90063f6d404a64202bc8028502ca21c4.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "September",
+                            "fr": "Septembre"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/cc5d90569e1c8313c2b1c2aab1401174.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/f07e75e4616aa66dbb6b33d8f7b1cf96.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "October",
+                            "fr": "Octobre"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/eca60ae8611369fe28a02e2ab8c5d12e.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/6ea4d48e0e8a24618430cc4c4ff97659.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "November",
+                            "fr": "Novembre"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/7e823b37564da492ca1629b4732289a8.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/39e61202a8644fc025ba7fa804fead6e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "December",
+                            "fr": "D\u00e9cembre"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/82331503174acbae012b2004f6431fa5.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/8c49d3e7bb278f512fef620c5d72f26e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Monday",
+                            "fr": "Lundi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/6f8522e0610541f1ef215a22ffa66ff6.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/9fc912ee29c712e08def5a5b4c3f225f.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Tuesday",
+                            "fr": "Mardi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/5792315f09a5d54fb7e3d066672b507f.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/09d99cb1a553fe636459f535c4aec418.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Wednesday",
+                            "fr": "Mercredi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/796c163589f295373e171842f37265d5.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/90cfad83a7819562473330e540f88a60.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Thursday",
+                            "fr": "Jeudi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/78ae6f0cd191d25147e252dc54768238.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/337be52633cb4616438e65358b282799.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Friday",
+                            "fr": "Vendredi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/c33b138a163847cdb6caeeb7c9a126b4.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/8f8eb0dffdda3b336fd56f2e84b6a479.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Saturday",
+                            "fr": "Samedi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/8b7051187b9191cdcdae6ed5a10e5adc.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/49a79a00c7747716697a3d9241c08e10.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Sunday",
+                            "fr": "Dimanche"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/9d1a0949c39e66a0cd65240bc0ac9177.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/aaa4996e1f6eaa5d6a0f37cc84c0e1c5.mp3"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Numbers",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "two",
+                            "fr": "deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/b8a9f715dbb64fd5c56e7783c6820a61.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/f83815aedaa1b6bf4211e85910e6bc82.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "three",
+                            "fr": "trois"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/35d6d33467aae9a2e3dccb4b6b027878.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/df809177146786d164f1fdd500fa1b1e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "four",
+                            "fr": "quatre"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/8cbad96aced40b3838dd9f07f6ef5772.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/2c862e68f7a9ad4d5935e4285f24fc28.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "five",
+                            "fr": "cinq"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/30056e1cab7a61d256fc8edd970d14f5.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/bfe30fe4cca73ed7a7062cd502fd38c0.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "six",
+                            "fr": "six"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/f52b5e449a2303c031a0c3a1109360bf.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/f52b5e449a2303c031a0c3a1109360bf.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "seven",
+                            "fr": "Sept"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/bb3aec0fdcdbc2974890f805c585d432.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/ff07559bc06ba6ed552dfc6ad46ef943.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "eight",
+                            "fr": "huit"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/24d27c169c2c881eb09a065116f2aa5c.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/0a753c7d861671504077aaccd4b24974.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "ten",
+                            "fr": "dix"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/b1b9a972ccd8c962a473909b97007eb4.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/569c818b1e5d5800a1b834580b0ebb22.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "eleven",
+                            "fr": "onze"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/9c8454ddf7aa50116496bac348d7550d.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/0a077f7a16c69ecf478b34a1f277a05c.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "twelve",
+                            "fr": "douze"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/15f6f8dc036519d7fe15b39338f6e5db.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/e3ca7fbe759a0d0afb2cbd2a62390472.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "thirteen",
+                            "fr": "treize"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/422ecc084f2458defc620ecebf2a6448.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/c26f75492097ed7b57c515b6d199f1a5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "fourteen",
+                            "fr": "quatorze"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/279e962ea623aa2a3a86739622772e1f.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/6cf540e97bb9c79b43bb182c118f8200.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "fifteen",
+                            "fr": "quinze"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/92a2132e0190d6e582f13376ddc660d5.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/c5614809ec8efc8ba22a20636ad3537b.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "sixteen",
+                            "fr": "seize"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/bd2c775d9eaf5f71da52b55ade9989a4.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/859446768554c9cb461c7f673485b41d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "seventeen",
+                            "fr": "dix-sept"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/2e457d2f9f38af419f5a34092cba8438.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/9d668852c989ee1bc2afb0ba9e0a605d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "eighteen",
+                            "fr": "dix-huit"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/2cbdaf9ce47a2c4adbd1fd578a192c58.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/863d3edb7205c4151a0020e8038482b6.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "nineteen",
+                            "fr": "dix-neuf"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/1d56cec552bf111de57687e4b5f8c795.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/b1c1aba662f2827c652b100f00ca455e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "twenty",
+                            "fr": "vingt"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/ab389edaabf8d841f5719d0cf64006a3.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/254fe26d28c2d41c4d2698c039996e6e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "twenty one",
+                            "fr": "vingt-et-un"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/f349be2dc6ab3c11bcead8d91fa90360.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/dc96ac2beae8f3b050dff8062611bc21.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "twenty two",
+                            "fr": "vingt-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/ca5ae332948acff18d263f1d3b02891c.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/835db354256e47c89ee315f32b9b8da5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "thirty two",
+                            "fr": "trente-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/8cb16a6da2f0587a3a2b614040dbd2cf.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/a08aca6c0aec401cb7d2097a05d9555d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "forty two",
+                            "fr": "quarante-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/1fd37eafabb0f1ac14eaa377d0b5f2bc.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/be2afdf0c7b6beabf937fc1672a920c7.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "fifty two",
+                            "fr": "cinquante-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/090f8b0d5ce6bea11a534d3bc73f9fff.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/a0b3e6371a1830b62729983810d58b84.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "sixty two",
+                            "fr": "Soixante-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/a9dd2ac771217a337fa4b7c86ca2122b.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/ca7a9767af0c0709fc7ba2af2a1dc65f.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "seventy two",
+                            "fr": "Soixante-dix-deux ans"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/24e9da0a826bf1ea5d173e605b8e7d32.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/a607a259b18446a76e404808198917c5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "eighty two",
+                            "fr": "Quatre-vingt-deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/5c15ae0267d3efc37d3aeffe826cd023.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/36957fd5bb68110a774b224ea13a9be7.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "ninety two",
+                            "fr": "quatre-vingt-dix deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/48424d5176ab93ea64b572ffa2e77522.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/2eb0d08db8916e133916aacea02c015f.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "one hundred",
+                            "fr": "cent"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/50c91a1c1d28b21c7adfaea39f0aef61.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/2d95b19b24f71bcabbc68e31afaff694.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "one",
+                            "fr": "un"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/f97c5d29941bfb1b2fdab0874906ab82.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/0674272bac0715f803e382b5aa437e08.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "nine",
+                            "fr": "neuf"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/c785e1ed2950e3e36b1e2ca01f299a54.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/dc0b8b59edda83d91fc78bce5aa76cc8.mp3"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Verb: To Be",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "I am",
+                            "fr": "Je suis"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/ac1be00f1f162e20d58099eec2ea1c70.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/d3bedf5e68a4351e7ec9cd2875cc215c.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You are",
+                            "fr": "Tu es"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/09a413a9de81c74a86abbca89c4069ed.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/e9bb8bb39736bf35907667ccf84dedb7.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "He/She/One is",
+                            "fr": "Il / elle / un est"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/81905d62c84b951dcd2ce03899429078.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/597b477e7b3f413ec1948cb4c3435826.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "We are",
+                            "fr": "Nous sommes"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/395e37e560ac75ec5fc8f2ac4ceba5a8.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/48d8b400454107f911ea320baaba02d4.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You are (plural)",
+                            "fr": "Vous \u00eates (pluriel)"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/5aa7318766719f7d16544eae8bcbe683.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/6f64c63c3cf96c57a1f8188166f8c0b4.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "They are",
+                            "fr": "Ils sont"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_be/audio/a3530d4b351fc4ef61125e35014cc523.mp3",
+                            "fr": "lessons/gen/french/verb_to_be/audio/5d789c489afc53aff976fb435e83dcbe.mp3"
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Other",
                 "phrases": [
                     {
@@ -3469,6 +4034,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/other/audio/66443fc64a86a1f73837702099627f8d.mp3",
                             "fr": "lessons/gen/french/other/audio/626efeb075ad77c33b7152b7c17e2483.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "One",
+                            "fr": "Un"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/other/audio/06c2cea18679d64399783748fa367bdd.mp3",
+                            "fr": "lessons/gen/french/other/audio/80a9a9f289a503c7e4218d1c34e05a02.mp3"
                         }
                     }
                 ]
