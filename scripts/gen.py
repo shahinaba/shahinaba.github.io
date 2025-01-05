@@ -1,6 +1,14 @@
 import json
 
-LESSONS_FILE = "lessons/lessons.json"
+LESSONS_DIR = "lessons"
+LESSONS_FILE = f"{LESSONS_DIR}/lessons.json"
+
+
+def _load_phrases(phrases_filepath):
+    fullPath = f"{LESSONS_DIR}/{phrases_filepath}"
+    with open(fullPath, "r", encoding="utf-8") as file:
+        phrases = [line.strip() for line in file if line.strip()]
+        return phrases
 
 
 def _load_json(filepath):
@@ -23,27 +31,34 @@ def _print_lessons():
     print(prettyLessons)
 
 
+def _generate_topic(language_folder, phrases_file):
+    phrases = _load_phrases(f"{language_folder}/{phrases_file}")
+
+    print(phrases)
+
+
 def _generate_lesson_content():
     lessons = _load_topics()
     numLessons = len(lessons)
     for lid, language in enumerate(lessons):
         _print_div()
         lessonNum = lid + 1
-        name = language['name']
-        languageCode = language['language_code']
-        folder = language["folder"]
+        langName = language['name']
+        langCode = language['language_code']
+        langFolder = language["folder"]
         topics = language['topics']
         numTopics = len(topics)
-        print(f"({lessonNum}/{numLessons}) {name}...")
-        print(f"    Language Code: {languageCode}")
-        print(f"    Folder: {folder}")
-        print("    Topics:")
+        print(f"({lessonNum}/{numLessons}) {langName}...")
+        print(f"Language Code: {langCode}")
+        print(f"Folder: {langFolder}")
+        print("Topics:")
         for tidx, topic in enumerate(topics):
             topicNum = tidx + 1
             topicName = topic['name']
             phrasesFile = topic['phrases_file']
-            fullPhrasesFile = f"{folder}/{phrasesFile}"
-            print(f"\t({topicNum}/{numTopics}) Generating content for {topicName} in {fullPhrasesFile}...")
+            fullPhrasesFile = f"{langFolder}/{phrasesFile}"
+            print(f"({topicNum}/{numTopics}) Generating content for {topicName} in {fullPhrasesFile}...")
+            _generate_topic(langFolder, phrasesFile)
             
             
 
