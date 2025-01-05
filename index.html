@@ -18,6 +18,22 @@
             color: #444;
         }
 
+        /* Play All button */
+        #play-all {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #play-all:hover {
+            background-color: #003d80;
+        }
+
         /* Collapsible button styling for language headers */
         .language-header {
             background-color: #0056b3; /* Blue for languages */
@@ -28,7 +44,8 @@
             border: none;
             text-align: left;
             font-size: 24px;
-            width: 100%; /* Extend the background */
+            width: calc(100% - 50px); /* Leave room for checkbox */
+            display: inline-block;
         }
 
         .language-header:hover {
@@ -45,7 +62,8 @@
             border: none;
             text-align: left;
             font-size: 20px;
-            width: 100%; /* Extend the background */
+            width: calc(100% - 50px); /* Leave room for checkbox */
+            display: inline-block;
             border-top: 1px solid #fff; /* White border on top */
         }
 
@@ -88,10 +106,19 @@
         tr:nth-child(odd) td {
             background-color: #ffffff;
         }
+
+        /* Checkbox styling */
+        .checkbox-container {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1>Language Lessons</h1>
+    <button id="play-all">Play All</button>
     <div id="lesson-container"></div>
     <script src="gen_data.js"></script>
     <script src="script.js"></script>
