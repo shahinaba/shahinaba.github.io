@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,8 @@
 
         /* Collapsible button styling for language headers */
         .language-header {
-            background-color: #0056b3; /* Blue for languages */
+            background-color: #0056b3;
+            /* Blue for languages */
             color: white;
             cursor: pointer;
             padding: 12px;
@@ -44,17 +46,20 @@
             border: none;
             text-align: left;
             font-size: 24px;
-            width: calc(100% - 50px); /* Leave room for checkbox */
+            width: calc(100% - 50px);
+            /* Leave room for checkbox */
             display: inline-block;
         }
 
         .language-header:hover {
-            background-color: #003d80; /* Darker blue on hover */
+            background-color: #003d80;
+            /* Darker blue on hover */
         }
 
         /* Collapsible button styling for topic headers */
         .topic-header {
-            background-color: gray; /* Gray for topics */
+            background-color: gray;
+            /* Gray for topics */
             color: white;
             cursor: pointer;
             padding: 12px;
@@ -62,13 +67,16 @@
             border: none;
             text-align: left;
             font-size: 20px;
-            width: calc(100% - 50px); /* Leave room for checkbox */
+            width: calc(100% - 50px);
+            /* Leave room for checkbox */
             display: inline-block;
-            border-top: 1px solid #fff; /* White border on top */
+            border-top: 1px solid #fff;
+            /* White border on top */
         }
 
         .topic-header:hover {
-            background-color: #4d4d4d; /* Darker gray on hover */
+            background-color: #4d4d4d;
+            /* Darker gray on hover */
         }
 
         /* Collapsible content styling */
@@ -86,7 +94,8 @@
             margin: 0px 0;
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
             border: 1px solid #ddd;
@@ -156,8 +165,24 @@
         .close-modal:hover {
             background-color: darkred;
         }
+
+        .play-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            /* optional rounded corners */
+        }
+
+        .play-btn:hover {
+            background-color: darkblue;
+        }
     </style>
 </head>
+
 <body>
     <h1>Language Lessons</h1>
     <button id="practice">Practice</button>
@@ -175,4 +200,5 @@
     <script src="gen_data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
