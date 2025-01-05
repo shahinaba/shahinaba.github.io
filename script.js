@@ -463,7 +463,7 @@ function createCollapsible(title, headerClass) {
             <td>${item.phrase.en}</td>
             <td>${item.phrase[languageCode]}</td>
             <td>
-              <button class="play-btn" data-lang="${languageCode}" data-audio="${item.audio[languageCode]}">Play ${language.language}</button>
+              <button class="play-btn" data-lang="${languageCode}" data-audio="${item.audio[languageCode]}">Play</button>
             </td>
           `;
           allItems.push({ id: rowId, data: item, element: row });
