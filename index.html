@@ -24,10 +24,10 @@
 
       <!-- Intro section (still shows how many phrases are about to be practiced) -->
       <div id="practice-intro">
-        <div style="font-weight:bold; margin-bottom:10px;">
+        <div style="font-weight:bold; margin-bottom:10px; text-align: left;">
           Practice Audio Options
         </div>
-
+        <p id="about-to-practice"></p>
         <!-- Options for Duration, Shuffle, Loop -->
         <div style="margin-bottom: 10px;">
           <label for="practice-duration" class="option-label">Duration:</label>
@@ -43,7 +43,7 @@
           </select>
         </div>
 
-        <div style="margin-bottom: 10px;">
+        <div style="margin-bottom: 24px;">
           <label style="display:inline-block; margin-right:15px;" class="checkbox-label">
             <input type="checkbox" id="shuffle-check" checked class="styled-checkbox"/>
             Shuffle
@@ -53,8 +53,6 @@
             Loop
           </label>
         </div>
-
-        <p id="about-to-practice"></p>
         <!-- Start button -->
         <button id="practice-start-btn">Start</button>
       </div>

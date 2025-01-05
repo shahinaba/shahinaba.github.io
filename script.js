@@ -30,6 +30,7 @@ function createCollapsible(title, headerClass) {
   }
   
   function playAudio(audioUrl, currentAudioRef) {
+    // (Used only for single “Play” button clicks)
     if (currentAudioRef.value) {
       currentAudioRef.value.pause();
       currentAudioRef.value.currentTime = 0;
@@ -50,6 +51,64 @@ function createCollapsible(title, headerClass) {
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+  }
+  
+  /**
+   * Play the chain for a single phrase:
+   *  1) English normal speed
+   *  2) Pause 0.5s
+   *  3) French at 0.5 speed
+   *  4) Pause 0.5s
+   *  5) French at 1x speed
+   *  6) Pause 0.5s
+   *  7) onComplete()
+   */
+  function playPhraseSequence(englishUrl, frenchUrl, currentAudioRef, onComplete) {
+    // Helper: stop any current audio
+    function stopCurrentAudio() {
+      if (currentAudioRef.value) {
+        currentAudioRef.value.pause();
+        currentAudioRef.value.currentTime = 0;
+        currentAudioRef.value = null;
+      }
+    }
+  
+    // 1) Play English at normal speed
+    stopCurrentAudio();
+    currentAudioRef.value = new Audio(englishUrl);
+    currentAudioRef.value.play();
+    currentAudioRef.value.onended = () => {
+      // 2) Pause 0.5s
+      stopCurrentAudio();
+      setTimeout(() => {
+        // 3) French at 0.5 speed
+        stopCurrentAudio();
+        currentAudioRef.value = new Audio(frenchUrl);
+        currentAudioRef.value.playbackRate = 0.5;
+        currentAudioRef.value.play();
+  
+        currentAudioRef.value.onended = () => {
+          // 4) Pause 0.5s
+          stopCurrentAudio();
+          setTimeout(() => {
+            // 5) French at 1x speed
+            stopCurrentAudio();
+            currentAudioRef.value = new Audio(frenchUrl);
+            currentAudioRef.value.playbackRate = 1;
+            currentAudioRef.value.play();
+  
+            currentAudioRef.value.onended = () => {
+              // 6) Pause 0.5s
+              stopCurrentAudio();
+              setTimeout(() => {
+                // 7) Sequence done
+                onComplete();
+              }, 400); // 0.5s
+            };
+          }, 400); // 0.5s
+        };
+      }, 400); // 0.5s
+    };
   }
   
   /**
@@ -81,31 +140,43 @@ function createCollapsible(title, headerClass) {
     const btnStart            = document.getElementById('practice-start-btn');
     const btnPauseResume      = document.getElementById('practice-play-resume-btn');
   
+    // Show or update the text layout for the current phrase
     function updateActiveLayout(index) {
       const currentItem = sequenceState.selectedItems[index];
       if (!currentItem) return;
   
+      // item.data.phrase.en => English phrase
+      // item.data.phrase[languageCode] => French phrase
       const { en, ...otherLangs } = currentItem.data.phrase;
-      // Grab the first non-English language key
       const translations = Object.keys(otherLangs);
       const firstTranslationKey = translations[0];
       const translatedText = (firstTranslationKey && otherLangs[firstTranslationKey]) || '';
   
-      // e.g., "5/18 Phrase"
+      // For example: "5/18 Phrase"
       const total = sequenceState.selectedItems.length;
+      practiceProgress.style.textAlign = 'left'; // if you want it left-aligned
       practiceProgress.textContent = `${index + 1}/${total} Phrase`;
   
-      // Show English + Translation
+      // Show English + Translation text
       practiceEnglish.textContent = en;
       practiceTranslation.textContent = translatedText;
     }
   
+    // Called after each phrase sequence ends
+    function onPhraseComplete() {
+      sequenceState.currentIndex++;
+      if (!sequenceState.isPaused && sequenceState.isPlaying) {
+        playNext();
+      }
+    }
+  
+    // The main function to play the next phrase
     function playNext() {
       if (!sequenceState.isPlaying || sequenceState.isPaused) return;
   
-      // If reached the end
+      // If we’ve reached the end
       if (sequenceState.currentIndex >= sequenceState.selectedItems.length) {
-        // If loop is enabled, start from beginning
+        // If loop is enabled, reset index
         if (sequenceState.loop) {
           sequenceState.currentIndex = 0;
         } else {
@@ -114,38 +185,29 @@ function createCollapsible(title, headerClass) {
         }
       }
   
-      // Update the text in the active layout
+      // Prepare layout for the current phrase
       updateActiveLayout(sequenceState.currentIndex);
   
-      // Grab the audio from the row’s data
-      const row = sequenceState.selectedItems[sequenceState.currentIndex].element;
-      const audioUrl = row.querySelector('.play-btn').dataset.audio;
+      // Grab the Audio URLs from the item
+      const item = sequenceState.selectedItems[sequenceState.currentIndex];
+      const englishUrl = item.data.audio.en; // e.g., item.audio.en in your data
+      // If you have multiple language codes, you might do:
+      //   const { languageCode } = ??? 
+      //   const frenchUrl = item.data.audio[languageCode];
+      // We'll assume you want "French" specifically:
+      const frenchUrl = item.data.audio.fr || item.data.audio[item.data.languageCode];
   
-      // Stop previous audio
-      if (currentAudioRef.value) {
-        currentAudioRef.value.pause();
-        currentAudioRef.value.currentTime = 0;
-      }
-      currentAudioRef.value = new Audio(audioUrl);
-      currentAudioRef.value.play();
-  
-      // On end, move to the next item
-      currentAudioRef.value.onended = () => {
-        if (!sequenceState.isPaused && sequenceState.isPlaying) {
-          sequenceState.currentIndex++;
-          playNext();
-        }
-      };
+      // Fire up the chain
+      playPhraseSequence(englishUrl, frenchUrl, currentAudioRef, onPhraseComplete);
     }
   
-    // Stop everything & reset
+    // Stop everything
     function stopSequence() {
       if (currentAudioRef.value) {
         currentAudioRef.value.pause();
         currentAudioRef.value.currentTime = 0;
         currentAudioRef.value = null;
       }
-  
       sequenceState.isPlaying = false;
       sequenceState.isPaused = false;
       sequenceState.currentIndex = 0;
@@ -168,14 +230,13 @@ function createCollapsible(title, headerClass) {
   
     return {
       start({ shuffle, loop, maxDuration }) {
-        // Gather selected items
         let selected = allItems.filter(item => item.selected);
         if (!selected.length) {
           alert('No items selected.');
           return;
         }
   
-        // Apply shuffle if checked
+        // Shuffle if needed
         if (shuffle) {
           selected = shuffleArray(selected);
         }
@@ -183,7 +244,7 @@ function createCollapsible(title, headerClass) {
         sequenceState.selectedItems = selected;
         sequenceState.loop = loop;
         sequenceState.shuffle = shuffle;
-        sequenceState.maxDuration = maxDuration; // in minutes
+        sequenceState.maxDuration = maxDuration;
   
         sequenceState.currentIndex = 0;
         sequenceState.isPlaying = true;
@@ -193,14 +254,13 @@ function createCollapsible(title, headerClass) {
         practiceIntro.style.display = 'none';
         practiceActive.style.display = 'block';
   
-        // Hide start, show pause button
+        // Hide start button, show pause button
         btnStart.style.display = 'none';
         btnPauseResume.style.display = 'inline-block';
         btnPauseResume.textContent = 'Pause';
   
         // If user selected a duration limit
         if (maxDuration > 0) {
-          // Convert minutes to ms
           const ms = maxDuration * 60000;
           sequenceState.durationTimer = setTimeout(() => {
             alert(`Practice time of ${maxDuration} minute(s) ended.`);
@@ -223,8 +283,7 @@ function createCollapsible(title, headerClass) {
         sequenceState.isPaused = false;
         sequenceState.isPlaying = true;
         if (currentAudioRef.value) {
-          // Replay from start
-          currentAudioRef.value.currentTime = 0;
+          currentAudioRef.value.currentTime = 0; // replay from start
           currentAudioRef.value.play();
         } else {
           playNext();
@@ -246,9 +305,9 @@ function createCollapsible(title, headerClass) {
     parentCheckbox.indeterminate = !allChecked && anyChecked;
   }
   
-  /** 
-   * Update the main “Practice Audio” button subtext & style 
-   * based on how many items are selected 
+  /**
+   * Update the main “Practice Audio” button subtext & style
+   * based on how many items are selected
    */
   function updatePracticeAudioButton(practiceButton, practiceAudioSubtext, allItems) {
     const selectedCount = allItems.filter(item => item.selected).length;
@@ -291,7 +350,7 @@ function createCollapsible(title, headerClass) {
     // Create the sequence controller
     let sequenceController = null;
   
-    // Show modal if the button isn’t disabled
+    // Show modal if not disabled
     practiceAudioButton.addEventListener('click', () => {
       if (!practiceAudioButton.disabled) {
         practiceModal.style.display = 'block';
@@ -323,7 +382,6 @@ function createCollapsible(title, headerClass) {
       if (!sequenceController) {
         sequenceController = createSequenceController(allItems, currentAudio);
       }
-  
       // Gather user-selected options
       const selectedDuration = parseInt(durationSelect.value, 10); // minutes
       const shuffleEnabled = shuffleCheck.checked;
@@ -381,7 +439,11 @@ function createCollapsible(title, headerClass) {
             <td><input type="checkbox" data-id="${rowId}"></td>
             <td>${item.phrase.en}</td>
             <td>${item.phrase[languageCode]}</td>
-            <td><button class="play-btn" data-audio="${item.audio[languageCode]}">Play</button></td>
+            <td>
+              <!-- Single “Play” button (English vs. second language depends on your data) -->
+              <button class="play-btn" data-lang="en" data-audio="${item.audio.en}">Play EN</button>
+              <button class="play-btn" data-lang="${languageCode}" data-audio="${item.audio[languageCode]}">Play ${language.language}</button>
+            </td>
           `;
           allItems.push({ id: rowId, data: item, element: row });
   
@@ -433,10 +495,11 @@ function createCollapsible(title, headerClass) {
       lessonContainer.appendChild(langDiv);
     });
   
-    // Individual “Play” button
+    // Individual “Play” button (for single-language playback)
     lessonContainer.addEventListener('click', event => {
       if (event.target.classList.contains('play-btn')) {
-        playAudio(event.target.dataset.audio, currentAudio);
+        const audioUrl = event.target.dataset.audio;
+        playAudio(audioUrl, currentAudio);
       }
     });
   
