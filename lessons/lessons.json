@@ -1,0 +1,32 @@
+[
+  {
+    "language" : "French",
+    "language_code" : "fr",
+    "folder" : "french",
+    "topics" : [
+      {
+        "name" : "Airport",
+        "phrases_file" : "airport.txt"
+      },
+      {
+        "name" : "Hotel",
+        "phrases_file" : "hotel.txt"
+      },
+      {
+        "name" : "Restaurant",
+        "phrases_file" : "restaurant.txt"
+      }
+    ]
+  },
+  {
+    "language" : "German",
+    "language_code" : "de",
+    "folder" : "german",
+    "topics" : [
+      {
+        "name" : "Airport",
+        "phrases_file" : "airport.txt"
+      }
+    ]
+  }
+]
