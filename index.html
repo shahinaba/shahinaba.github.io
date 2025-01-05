@@ -17,7 +17,7 @@
       margin: 20px 0;
     }
 
-    /* Practice Audio button (default: gray and disabled) */
+    /* Practice Audio button */
     #practice-audio {
       display: block;
       margin: 20px auto;
@@ -26,12 +26,23 @@
       color: #fff;
       border: none;
       cursor: pointer;
-      max-width: 300px;
+      max-width: 250px;
       width: 80%;
-      background-color: gray; /* default gray background */
-      opacity: 0.6; /* “disabled” look */
+      background-color: gray; /* default gray (disabled) */
+      opacity: 0.6;
     }
-    /* Enabled (green) state for the Practice Audio button */
+    /* Button text on top, subtext below */
+    #practice-audio-text {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #practice-audio-subtext {
+      display: block;
+      font-size: 14px;
+      margin-top: 4px; /* small spacing */
+    }
+    /* When enabled (green) */
     #practice-audio.enabled {
       background-color: green;
       opacity: 1;
@@ -40,7 +51,7 @@
       background-color: darkgreen;
     }
 
-    /* Modal (covers full screen) */
+    /* Modal styling */
     .modal {
       display: none;
       position: fixed;
@@ -52,7 +63,6 @@
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.5);
     }
-    /* Modal content (centered and responsive) */
     .modal-content {
       background-color: #fff;
       margin: 50px auto;
@@ -67,7 +77,7 @@
       text-align: center;
     }
 
-    /* Close button inside modal */
+    /* Close button */
     #close-modal {
       background-color: red;
       color: white;
@@ -80,7 +90,7 @@
       background-color: darkred;
     }
 
-    /* "Start" button inside modal (formerly “Play All Selected”) */
+    /* “Start” button inside modal */
     #play-all {
       background-color: green;
       color: white;
@@ -166,15 +176,19 @@
 <body>
   <h1>Language Lessons</h1>
   
-  <button id="practice-audio" disabled>Practice Audio (no phrases selected)</button>
+  <!-- Practice Audio button with two lines of text -->
+  <button id="practice-audio" disabled>
+    <span id="practice-audio-text">Practice Audio</span>
+    <span id="practice-audio-subtext">(no phrases selected)</span>
+  </button>
 
   <!-- Modal -->
   <div id="practice-modal" class="modal">
     <div class="modal-content">
       <button id="close-modal">X</button>
       <h2>Practice Audio Options</h2>
-      <p>This is a placeholder for practice functionality.</p>
-      <!-- Renamed to “Start” -->
+      <!-- Updated text to show how many phrases user is about to practice -->
+      <p id="about-to-practice"></p> 
       <button id="play-all">Start</button>
     </div>
   </div>
