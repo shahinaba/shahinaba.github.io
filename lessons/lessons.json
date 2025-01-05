@@ -49,6 +49,18 @@
         "phrases_file" : "train_station.txt"
       },
       {
+        "name" : "Months and Week Days",
+        "phrases_file" : "months_and_week_days.txt"
+      },
+      {
+        "name" : "Numbers",
+        "phrases_file" : "numbers.txt"
+      },
+      {
+        "name" : "Verb: To Be",
+        "phrases_file" : "verb_to_be.txt"
+      },
+      {
         "name" : "Other",
         "phrases_file" : "other.txt"
       }

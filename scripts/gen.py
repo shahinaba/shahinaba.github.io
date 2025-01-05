@@ -56,6 +56,8 @@ def _get_translation_maps(phrasesMap, lang_code):
 
     for phraseId, phrase in phrasesMap.items():
         try:
+            if phrase == 'one':
+                print("HERE")
             print(f"({phraseId + 1}/{len(phrasesMap)}) Translating({lang_code}): {phrase}")
 
             translation = translator.translate(phrase, src=EN_LANG_CODE, dest=lang_code)
