@@ -1,204 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Lessons</title>
-    <style>
-        /* General body styling */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Lessons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+      margin: 20px 0;
+    }
 
-        h1 {
-            text-align: center;
-            color: #444;
-        }
+    /* Practice Audio button (default: gray and disabled) */
+    #practice-audio {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      max-width: 300px;
+      width: 80%;
+      background-color: gray; /* default gray background */
+      opacity: 0.6; /* “disabled” look */
+    }
+    /* Enabled (green) state for the Practice Audio button */
+    #practice-audio.enabled {
+      background-color: green;
+      opacity: 1;
+    }
+    #practice-audio.enabled:hover {
+      background-color: darkgreen;
+    }
 
-        /* Practice button */
-        #practice {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+    /* Modal (covers full screen) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    /* Modal content (centered and responsive) */
+    .modal-content {
+      background-color: #fff;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      width: 90%;
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      text-align: center;
+    }
 
-        #practice:hover {
-            background-color: #003d80;
-        }
+    /* Close button inside modal */
+    #close-modal {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      float: right;
+    }
+    #close-modal:hover {
+      background-color: darkred;
+    }
 
-        /* Collapsible button styling for language headers */
-        .language-header {
-            background-color: #0056b3;
-            /* Blue for languages */
-            color: white;
-            cursor: pointer;
-            padding: 12px;
-            margin: 0;
-            border: none;
-            text-align: left;
-            font-size: 24px;
-            width: calc(100% - 50px);
-            /* Leave room for checkbox */
-            display: inline-block;
-        }
+    /* "Start" button inside modal (formerly “Play All Selected”) */
+    #play-all {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+    #play-all:hover {
+      background-color: darkgreen;
+    }
 
-        .language-header:hover {
-            background-color: #003d80;
-            /* Darker blue on hover */
-        }
-
-        /* Collapsible button styling for topic headers */
-        .topic-header {
-            background-color: gray;
-            /* Gray for topics */
-            color: white;
-            cursor: pointer;
-            padding: 12px;
-            margin: 0;
-            border: none;
-            text-align: left;
-            font-size: 20px;
-            width: calc(100% - 50px);
-            /* Leave room for checkbox */
-            display: inline-block;
-            border-top: 1px solid #fff;
-            /* White border on top */
-        }
-
-        .topic-header:hover {
-            background-color: #4d4d4d;
-            /* Darker gray on hover */
-        }
-
-        /* Collapsible content styling */
-        .content {
-            display: none;
-            margin-bottom: 10px;
-            background-color: #fff;
-            padding: 0 12px;
-        }
-
-        /* Table styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0px 0;
-        }
-
-        th,
-        td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #044f27;
-            color: white;
-            text-transform: uppercase;
-        }
-
-        /* Alternate row colors for phrases */
-        tr:nth-child(even) td {
-            background-color: #f2f2f2;
-        }
-
-        tr:nth-child(odd) td {
-            background-color: #ffffff;
-        }
-
-        /* Checkbox styling */
-        .checkbox-container {
-            display: inline-block;
-            vertical-align: middle;
-            width: 40px;
-            text-align: center;
-        }
-
-        /* Modal styling */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-        }
-
-        .modal-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 80%;
-            max-width: 400px;
-            text-align: center;
-        }
-
-        .modal-content h2 {
-            margin-top: 0;
-        }
-
-        .close-modal {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: red;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .close-modal:hover {
-            background-color: darkred;
-        }
-
-        .play-btn {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            font-size: 16px;
-            padding: 8px 16px;
-            cursor: pointer;
-            border-radius: 4px;
-            /* optional rounded corners */
-        }
-
-        .play-btn:hover {
-            background-color: darkblue;
-        }
-    </style>
+    /* Collapsible headings, table, etc. */
+    .language-header {
+      background-color: #0056b3;
+      color: white;
+      cursor: pointer;
+      padding: 12px;
+      font-size: 24px;
+      width: calc(100% - 50px);
+      display: inline-block;
+    }
+    .language-header:hover {
+      background-color: #003d80;
+    }
+    .topic-header {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+      padding: 12px;
+      font-size: 20px;
+      width: calc(100% - 50px);
+      display: inline-block;
+      border-top: 1px solid #fff;
+    }
+    .topic-header:hover {
+      background-color: #4d4d4d;
+    }
+    .content {
+      display: none;
+      margin-bottom: 10px;
+      background-color: #fff;
+      padding: 0 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #044f27;
+      color: white;
+      text-transform: uppercase;
+    }
+    tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) td {
+      background-color: #ffffff;
+    }
+    .checkbox-container {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+    }
+    .play-btn {
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .play-btn:hover {
+      background-color: darkblue;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Language Lessons</h1>
-    <button id="practice">Practice</button>
-    <div id="lesson-container"></div>
+  <h1>Language Lessons</h1>
+  
+  <button id="practice-audio" disabled>Practice Audio (no phrases selected)</button>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <h2>Practice Options</h2>
-            <p>This is a placeholder modal for practice functionality.</p>
-            <button class="close-modal" id="close-modal">Close</button>
-        </div>
+  <!-- Modal -->
+  <div id="practice-modal" class="modal">
+    <div class="modal-content">
+      <button id="close-modal">X</button>
+      <h2>Practice Audio Options</h2>
+      <p>This is a placeholder for practice functionality.</p>
+      <!-- Renamed to “Start” -->
+      <button id="play-all">Start</button>
     </div>
+  </div>
 
-    <script src="gen_data.js"></script>
-    <script src="script.js"></script>
+  <div id="lesson-container"></div>
+
+  <script src="gen_data.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

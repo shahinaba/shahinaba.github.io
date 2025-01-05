@@ -16,7 +16,6 @@ function createCollapsible(title, headerClass) {
     header.style.alignItems = 'center';
   
     header.addEventListener('click', (event) => {
-      // Toggle content visibility only if clicked outside the checkbox
       if (event.target !== checkbox) {
         content.style.display = content.style.display === 'block' ? 'none' : 'block';
       }
@@ -27,22 +26,98 @@ function createCollapsible(title, headerClass) {
   
     wrapper.appendChild(header);
     wrapper.appendChild(content);
-  
     return wrapper;
   }
   
   function playAudio(audioUrl, currentAudioRef) {
-    // Stop previous audio if playing
     if (currentAudioRef.value) {
       currentAudioRef.value.pause();
       currentAudioRef.value.currentTime = 0;
     }
-    // Create and play new audio
     currentAudioRef.value = new Audio(audioUrl);
     currentAudioRef.value.play();
-    // Clear reference on end
     currentAudioRef.value.onended = () => {
       currentAudioRef.value = null;
+    };
+  }
+  
+  // Sequence controller (unchanged except for button text reference)
+  function createSequenceController(allItems, currentAudioRef, playAllButton) {
+    const sequenceState = {
+      selectedItems: [],
+      currentIndex: 0,
+      isPlaying: false,
+      isPaused: false
+    };
+  
+    function playNext() {
+      if (!sequenceState.isPlaying || sequenceState.isPaused) return;
+      if (sequenceState.currentIndex >= sequenceState.selectedItems.length) {
+        stopSequence();
+        return;
+      }
+      const row = sequenceState.selectedItems[sequenceState.currentIndex].element;
+      const audioUrl = row.querySelector('.play-btn').dataset.audio;
+  
+      if (currentAudioRef.value) {
+        currentAudioRef.value.pause();
+        currentAudioRef.value.currentTime = 0;
+      }
+      currentAudioRef.value = new Audio(audioUrl);
+      currentAudioRef.value.play();
+      currentAudioRef.value.onended = () => {
+        if (!sequenceState.isPaused && sequenceState.isPlaying) {
+          sequenceState.currentIndex++;
+          playNext();
+        }
+      };
+    }
+  
+    function stopSequence() {
+      if (currentAudioRef.value) {
+        currentAudioRef.value.pause();
+        currentAudioRef.value.currentTime = 0;
+        currentAudioRef.value = null;
+      }
+      playAllButton.textContent = 'Start'; // reset to "Start"
+      sequenceState.isPlaying = false;
+      sequenceState.isPaused = false;
+      sequenceState.currentIndex = 0;
+    }
+  
+    return {
+      start() {
+        sequenceState.selectedItems = allItems.filter(item => item.selected);
+        if (!sequenceState.selectedItems.length) {
+          alert('No items selected.');
+          return;
+        }
+        sequenceState.currentIndex = 0;
+        sequenceState.isPlaying = true;
+        sequenceState.isPaused = false;
+        playAllButton.textContent = 'Pause'; // now toggles to "Pause"
+        playNext();
+      },
+      pause() {
+        sequenceState.isPaused = true;
+        sequenceState.isPlaying = false;
+        if (currentAudioRef.value) currentAudioRef.value.pause();
+        playAllButton.textContent = 'Resume'; // toggles to "Resume"
+      },
+      resume() {
+        sequenceState.isPaused = false;
+        sequenceState.isPlaying = true;
+        if (currentAudioRef.value) {
+          currentAudioRef.value.currentTime = 0;
+          currentAudioRef.value.play();
+        } else {
+          playNext();
+        }
+        playAllButton.textContent = 'Pause'; // toggles back to "Pause"
+      },
+      stop() {
+        stopSequence();
+      }
     };
   }
   
@@ -50,32 +125,83 @@ function createCollapsible(title, headerClass) {
     const childCheckboxes = content.querySelectorAll('input[type="checkbox"]');
     const allChecked = Array.from(childCheckboxes).every(cb => cb.checked);
     const anyChecked = Array.from(childCheckboxes).some(cb => cb.checked);
-  
     parentCheckbox.checked = allChecked;
     parentCheckbox.indeterminate = !allChecked && anyChecked;
   }
   
+  /* 
+    NEW FUNCTION: Updates the Practice Audio button
+    - If zero selected, text = "Practice Audio (no phrases selected)", disabled (gray).
+    - If > 0, text = "Practice Audio (X phrases)", enabled (green).
+  */
+  function updatePracticeAudioButton(practiceButton, allItems) {
+    const selectedCount = allItems.filter(item => item.selected).length;
+    if (selectedCount === 0) {
+      practiceButton.textContent = 'Practice Audio (no phrases selected)';
+      practiceButton.disabled = true;
+      practiceButton.classList.remove('enabled');
+    } else {
+      practiceButton.textContent = `Practice Audio (${selectedCount} phrases)`;
+      practiceButton.disabled = false;
+      practiceButton.classList.add('enabled');
+    }
+  }
+  
   // --- Main DOMContentLoaded setup ---
   document.addEventListener('DOMContentLoaded', () => {
-    // References to DOM elements
     const lessonContainer = document.getElementById('lesson-container');
-    const practiceButton = document.getElementById('practice');
-    const modal = document.getElementById('modal');
+    const practiceAudioButton = document.getElementById('practice-audio');
+    const practiceModal = document.getElementById('practice-modal');
     const closeModalButton = document.getElementById('close-modal');
+    const playAllButton = document.getElementById('play-all');
   
-    // Global tracking
-    const currentAudio = { value: null }; // Using an object to pass by reference
+    const currentAudio = { value: null };
     const allItems = [];
   
-    // Event listeners for modal
-    practiceButton.addEventListener('click', () => {
-      modal.style.display = 'block';
-    });
-    closeModalButton.addEventListener('click', () => {
-      modal.style.display = 'none';
+    let sequenceController = null;
+  
+    // Show modal
+    practiceAudioButton.addEventListener('click', () => {
+      // Only open if button is not disabled
+      if (!practiceAudioButton.disabled) {
+        practiceModal.style.display = 'block';
+      }
     });
   
-    // Build the UI from genData
+    // Hide modal & stop audio
+    closeModalButton.addEventListener('click', () => {
+      practiceModal.style.display = 'none';
+      if (sequenceController) {
+        sequenceController.stop();
+      }
+    });
+  
+    // Clicking outside modal-content closes the modal too
+    window.addEventListener('click', (event) => {
+      if (event.target === practiceModal) {
+        practiceModal.style.display = 'none';
+        if (sequenceController) {
+          sequenceController.stop();
+        }
+      }
+    });
+  
+    // Toggle between Start / Pause / Resume
+    playAllButton.addEventListener('click', () => {
+      if (!sequenceController) {
+        sequenceController = createSequenceController(allItems, currentAudio, playAllButton);
+      }
+      const btnText = playAllButton.textContent;
+      if (btnText === 'Start') {
+        sequenceController.start();
+      } else if (btnText === 'Pause') {
+        sequenceController.pause();
+      } else if (btnText === 'Resume') {
+        sequenceController.resume();
+      }
+    });
+  
+    // Build UI from genData
     genData.forEach(language => {
       const langDiv = createCollapsible(language.language, 'language-header');
       const langContent = langDiv.querySelector('.content');
@@ -112,12 +238,18 @@ function createCollapsible(title, headerClass) {
           `;
           allItems.push({ id: rowId, data: item, element: row });
   
+          // Row checkbox change
           const rowCheckbox = row.querySelector('input[type="checkbox"]');
           rowCheckbox.addEventListener('change', () => {
             const foundItem = allItems.find(i => i.id === rowId);
-            if (foundItem) foundItem.selected = rowCheckbox.checked;
+            if (foundItem) {
+              foundItem.selected = rowCheckbox.checked;
+            }
             syncParentCheckbox(topicCheckbox, topicContent);
             syncParentCheckbox(langCheckbox, langContent);
+  
+            // Update practice audio button each time selection changes
+            updatePracticeAudioButton(practiceAudioButton, allItems);
           });
   
           tbody.appendChild(row);
@@ -125,37 +257,49 @@ function createCollapsible(title, headerClass) {
   
         topicContent.appendChild(table);
   
-        // Topic checkbox listener
+        // Topic checkbox
         topicCheckbox.addEventListener('change', () => {
           topicContent.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             cb.checked = topicCheckbox.checked;
             const foundItem = allItems.find(i => i.id === cb.dataset.id);
-            if (foundItem) foundItem.selected = topicCheckbox.checked;
+            if (foundItem) {
+              foundItem.selected = topicCheckbox.checked;
+            }
           });
           syncParentCheckbox(langCheckbox, langContent);
+  
+          // Update button
+          updatePracticeAudioButton(practiceAudioButton, allItems);
         });
   
         langContent.appendChild(topicDiv);
       });
   
-      // Language checkbox listener
+      // Language checkbox
       langCheckbox.addEventListener('change', () => {
         langContent.querySelectorAll('input[type="checkbox"]').forEach(cb => {
           cb.checked = langCheckbox.checked;
           const foundItem = allItems.find(i => i.id === cb.dataset.id);
-          if (foundItem) foundItem.selected = langCheckbox.checked;
+          if (foundItem) {
+            foundItem.selected = langCheckbox.checked;
+          }
         });
+  
+        // Update button
+        updatePracticeAudioButton(practiceAudioButton, allItems);
       });
   
       lessonContainer.appendChild(langDiv);
     });
   
-    // Handle play buttons
-    lessonContainer.addEventListener('click', event => {
+    // Individual "Play" button
+    lessonContainer.addEventListener('click', (event) => {
       if (event.target.classList.contains('play-btn')) {
-        const audioUrl = event.target.dataset.audio;
-        playAudio(audioUrl, currentAudio);
+        playAudio(event.target.dataset.audio, currentAudio);
       }
     });
+    
+    // Initial check (in case genData is initially empty or something):
+    updatePracticeAudioButton(practiceAudioButton, allItems);
   });
   
