@@ -1,6 +1,6 @@
 [
   {
-    "language" : "French",
+    "name" : "French",
     "language_code" : "fr",
     "folder" : "french",
     "topics" : [
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "language" : "German",
+    "name" : "German",
     "language_code" : "de",
     "folder" : "german",
     "topics" : [
