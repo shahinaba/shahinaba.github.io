@@ -3432,6 +3432,16 @@
                     "en": "lessons/gen/french/other/audio/66443fc64a86a1f73837702099627f8d.mp3",
                     "fr": "lessons/gen/french/other/audio/626efeb075ad77c33b7152b7c17e2483.mp3"
                 }
+            },
+            {
+                "phrase": {
+                    "en": "One",
+                    "fr": "Un"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/other/audio/06c2cea18679d64399783748fa367bdd.mp3",
+                    "fr": "lessons/gen/french/other/audio/80a9a9f289a503c7e4218d1c34e05a02.mp3"
+                }
             }
         ],
         "months_and_week_days": [
@@ -3905,6 +3915,26 @@
                 "audio": {
                     "en": "lessons/gen/french/numbers/audio/50c91a1c1d28b21c7adfaea39f0aef61.mp3",
                     "fr": "lessons/gen/french/numbers/audio/2d95b19b24f71bcabbc68e31afaff694.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "one",
+                    "fr": "un"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/numbers/audio/f97c5d29941bfb1b2fdab0874906ab82.mp3",
+                    "fr": "lessons/gen/french/numbers/audio/0674272bac0715f803e382b5aa437e08.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "nine",
+                    "fr": "neuf"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/numbers/audio/c785e1ed2950e3e36b1e2ca01f299a54.mp3",
+                    "fr": "lessons/gen/french/numbers/audio/dc0b8b59edda83d91fc78bce5aa76cc8.mp3"
                 }
             }
         ],
