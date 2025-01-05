@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const lessonContainer = document.getElementById('lesson-container');
-    const playAllButton = document.getElementById('play-all');
+    const practiceButton = document.getElementById('practice');
+    const modal = document.getElementById('modal');
+    const closeModalButton = document.getElementById('close-modal');
+
+    let currentAudio = null; // To track the currently playing audio
+
+    // Show the modal when Practice button is clicked
+    practiceButton.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Hide the modal when Close button is clicked
+    closeModalButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
 
     // Variable to store all items and their selected state
     const allItems = [];
@@ -8,16 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Loop through the languages in genData
     genData.forEach(language => {
         const langDiv = createCollapsible(language.language, 'language-header');
-        const langContent = langDiv.querySelector('.content'); // Access the collapsible content
+        const langContent = langDiv.querySelector('.content');
         const langCheckbox = langDiv.querySelector('.checkbox-container input');
+        const languageCode = language.languageCode; // Extract language code
 
         // Loop through topics within each language
         language.topics.forEach(topic => {
             const topicDiv = createCollapsible(topic.name, 'topic-header');
-            const topicContent = topicDiv.querySelector('.content'); // Access the collapsible content
+            const topicContent = topicDiv.querySelector('.content');
             const topicCheckbox = topicDiv.querySelector('.checkbox-container input');
 
-            // Create a table for phrases
             const table = document.createElement('table');
             table.innerHTML = `
                 <thead>
@@ -42,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <input type="checkbox" data-id="${rowId}">
                     </td>
                     <td>${item.phrase.en}</td>
-                    <td>${item.phrase.fr}</td>
+                    <td>${item.phrase[languageCode]}</td>
                     <td>
-                        <button onclick="playAudio('${item.audio.fr}')">Play</button>
+                        <button class="play-btn" data-audio="${item.audio[languageCode]}">Play</button>
                     </td>
                 `;
 
@@ -58,94 +72,110 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (item) {
                         item.selected = rowCheckbox.checked;
                     }
+
+                    // Sync parent checkboxes
+                    syncParentCheckbox(topicCheckbox, topicContent);
+                    syncParentCheckbox(langCheckbox, langContent);
                 });
 
                 tbody.appendChild(row);
             });
 
-            // Add table to topic's collapsible content
             topicContent.appendChild(table);
 
-            // Sync topic checkbox with row checkboxes
+            // Add topic checkbox listener
             topicCheckbox.addEventListener('change', () => {
-                const allCheckboxes = topicContent.querySelectorAll('input[type="checkbox"]');
-                allCheckboxes.forEach(cb => {
+                const childCheckboxes = topicContent.querySelectorAll('input[type="checkbox"]');
+                childCheckboxes.forEach(cb => {
                     cb.checked = topicCheckbox.checked;
                     const item = allItems.find(i => i.id === cb.dataset.id);
                     if (item) {
-                        item.selected = cb.checked;
+                        item.selected = topicCheckbox.checked;
                     }
                 });
+                syncParentCheckbox(langCheckbox, langContent);
             });
 
-            // Add topic collapsible to language content
             langContent.appendChild(topicDiv);
         });
 
-        // Sync language checkbox with topic checkboxes
+        // Add language checkbox listener
         langCheckbox.addEventListener('change', () => {
-            const allTopicCheckboxes = langContent.querySelectorAll('.topic-header input[type="checkbox"]');
-            allTopicCheckboxes.forEach(cb => {
+            const childCheckboxes = langContent.querySelectorAll('input[type="checkbox"]');
+            childCheckboxes.forEach(cb => {
                 cb.checked = langCheckbox.checked;
-                cb.dispatchEvent(new Event('change'));
+                const item = allItems.find(i => i.id === cb.dataset.id);
+                if (item) {
+                    item.selected = langCheckbox.checked;
+                }
             });
         });
 
-        // Add language collapsible to lesson container
         lessonContainer.appendChild(langDiv);
     });
 
-    // Play all selected items in page order
-    playAllButton.addEventListener('click', () => {
-        const selectedItems = allItems.filter(item => item.selected);
-        playAll(selectedItems);
-    });
-});
-
-// Utility to create collapsible sections with checkbox
-function createCollapsible(title, headerClass) {
-    const wrapper = document.createElement('div');
-    const header = document.createElement('div');
-    const content = document.createElement('div');
-    const checkboxContainer = document.createElement('span');
-    const checkbox = document.createElement('input');
-
-    header.classList.add(headerClass);
-    content.classList.add('content');
-    checkboxContainer.classList.add('checkbox-container');
-    checkbox.type = 'checkbox';
-
-    header.innerHTML = `<span>${title}</span>`;
-    header.style.display = "flex";
-    header.style.alignItems = "center";
-
-    header.addEventListener('click', (event) => {
-        if (event.target !== checkbox) {
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    // Add event listener to dynamically handle play buttons
+    lessonContainer.addEventListener('click', event => {
+        if (event.target.classList.contains('play-btn')) {
+            const audioUrl = event.target.dataset.audio;
+            playAudio(audioUrl);
         }
     });
 
-    checkboxContainer.appendChild(checkbox);
-    header.prepend(checkboxContainer);
+    // Function to play audio and stop previous audio if playing
+    function playAudio(audioUrl) {
+        if (currentAudio) {
+            currentAudio.pause(); // Stop currently playing audio
+            currentAudio.currentTime = 0; // Reset to the start
+        }
 
-    wrapper.appendChild(header);
-    wrapper.appendChild(content);
+        currentAudio = new Audio(audioUrl); // Create new audio
+        currentAudio.play();
 
-    return wrapper;
-}
+        // Clear currentAudio reference when playback ends
+        currentAudio.onended = () => {
+            currentAudio = null;
+        };
+    }
 
-// Play audio
-function playAudio(audioUrl) {
-    const audio = new Audio(audioUrl);
-    audio.play();
-}
+    // Synchronize parent checkbox state based on children
+    function syncParentCheckbox(parentCheckbox, content) {
+        const childCheckboxes = content.querySelectorAll('input[type="checkbox"]');
+        const allChecked = Array.from(childCheckboxes).every(cb => cb.checked);
+        const anyChecked = Array.from(childCheckboxes).some(cb => cb.checked);
 
-// Play all selected audio in page order
-function playAll(selectedItems) {
-    if (selectedItems.length === 0) return;
-    const firstItem = selectedItems[0];
-    const audio = new Audio(firstItem.data.audio.fr);
+        parentCheckbox.checked = allChecked;
+        parentCheckbox.indeterminate = !allChecked && anyChecked; // Show indeterminate state
+    }
 
-    audio.play();
-    audio.onended = () => playAll(selectedItems.slice(1));
-}
+    function createCollapsible(title, headerClass) {
+        const wrapper = document.createElement('div');
+        const header = document.createElement('div');
+        const content = document.createElement('div');
+        const checkboxContainer = document.createElement('span');
+        const checkbox = document.createElement('input');
+
+        header.classList.add(headerClass);
+        content.classList.add('content');
+        checkboxContainer.classList.add('checkbox-container');
+        checkbox.type = 'checkbox';
+
+        header.innerHTML = `<span>${title}</span>`;
+        header.style.display = "flex";
+        header.style.alignItems = "center";
+
+        header.addEventListener('click', (event) => {
+            if (event.target !== checkbox) {
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+
+        checkboxContainer.appendChild(checkbox);
+        header.prepend(checkboxContainer);
+
+        wrapper.appendChild(header);
+        wrapper.appendChild(content);
+
+        return wrapper;
+    }
+});

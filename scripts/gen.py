@@ -172,6 +172,7 @@ def _update_website_data():
     for lang in lessons:
         currentLang = {}
         langName = lang["name"]
+        langCode = lang["language_code"]
         if lang["folder"] not in genData:
             continue
         
@@ -197,6 +198,7 @@ def _update_website_data():
                 "phrases": topicPhrases
             })
         currentLang["language"] = langName
+        currentLang["languageCode"] = langCode
         currentLang["topics"] = langTopics
         jsGenData.append(currentLang)
     

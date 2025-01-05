@@ -18,8 +18,8 @@
             color: #444;
         }
 
-        /* Play All button */
-        #play-all {
+        /* Practice button */
+        #practice {
             display: block;
             margin: 20px auto;
             padding: 10px 20px;
@@ -30,7 +30,7 @@
             cursor: pointer;
         }
 
-        #play-all:hover {
+        #practice:hover {
             background-color: #003d80;
         }
 
@@ -114,12 +114,64 @@
             width: 40px;
             text-align: center;
         }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            margin-top: 0;
+        }
+
+        .close-modal {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            background-color: darkred;
+        }
     </style>
 </head>
 <body>
     <h1>Language Lessons</h1>
-    <button id="play-all">Play All</button>
+    <button id="practice">Practice</button>
     <div id="lesson-container"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Practice Options</h2>
+            <p>This is a placeholder modal for practice functionality.</p>
+            <button class="close-modal" id="close-modal">Close</button>
+        </div>
+    </div>
+
     <script src="gen_data.js"></script>
     <script src="script.js"></script>
 </body>

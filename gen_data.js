@@ -1,6 +1,7 @@
 const genData = [
     {
         "language": "French",
+        "languageCode": "fr",
         "topics": [
             {
                 "name": "Airport",
