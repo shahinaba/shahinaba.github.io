@@ -4,5 +4,8 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"mypy.enabled": false,
+		"python.defaultInterpreterPath": "/Users/farhadabasov/miniconda3/envs/dad_site",
+	}
 }
