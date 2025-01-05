@@ -117,8 +117,15 @@ h1 {
 }
 #practice-progress {
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 10px;
   text-align: left; 
+}
+
+#practice-options-status {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 #practice-english,

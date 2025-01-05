@@ -128,7 +128,9 @@ function createCollapsible(title, headerClass) {
       loop: false,
       shuffle: false,
       maxDuration: 0, // in minutes; 0 means no limit
-      durationTimer: null
+      durationTimer: null,
+      startTime: 0,   // We'll record the time we start the practice
+      updateInterval: null // Store the interval ID here
     };
   
     // Grab DOM elements
@@ -137,32 +139,62 @@ function createCollapsible(title, headerClass) {
     const practiceProgress    = document.getElementById('practice-progress');
     const practiceEnglish     = document.getElementById('practice-english');
     const practiceTranslation = document.getElementById('practice-translation');
+    const practiceOptionsStatus = document.getElementById('practice-options-status');
     const btnStart            = document.getElementById('practice-start-btn');
     const btnPauseResume      = document.getElementById('practice-play-resume-btn');
   
-    // Show or update the text layout for the current phrase
+    // Helper: format mm:ss from milliseconds
+    function formatTime(ms) {
+      if (ms <= 0) return '0:00';
+      const seconds = Math.floor(ms / 1000) % 60;
+      const minutes = Math.floor(ms / 60000);
+      return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+    }
+  
+    // Returns string of how much time remains if user selected a duration
+    function getTimeRemaining() {
+      if (sequenceState.maxDuration === 0) {
+        return 'No limit';
+      }
+      // total ms for the practice
+      const totalMs = sequenceState.maxDuration * 60000;
+      // how long we've been going
+      const elapsedMs = Date.now() - sequenceState.startTime;
+      const remainingMs = totalMs - elapsedMs;
+      if (remainingMs <= 0) return '0:00'; // time’s up
+      return formatTime(remainingMs);
+    }
+  
+    // Update the text in #practice-options-status (e.g. "Shuffle: ON, Loop: OFF, Time remaining: 6:05")
+    function updatePracticeDetailsUI() {
+      const shuffleText = sequenceState.shuffle ? 'ON' : 'OFF';
+      const loopText    = sequenceState.loop ? 'ON' : 'OFF';
+      const timeText    = getTimeRemaining();
+  
+      practiceOptionsStatus.textContent = `Shuffle: ${shuffleText}, Loop: ${loopText}, Time: ${timeText}`;
+    }
+  
     function updateActiveLayout(index) {
       const currentItem = sequenceState.selectedItems[index];
       if (!currentItem) return;
   
-      // item.data.phrase.en => English phrase
-      // item.data.phrase[languageCode] => French phrase
       const { en, ...otherLangs } = currentItem.data.phrase;
       const translations = Object.keys(otherLangs);
       const firstTranslationKey = translations[0];
       const translatedText = (firstTranslationKey && otherLangs[firstTranslationKey]) || '';
   
-      // For example: "5/18 Phrase"
+      // e.g., "5/18 Phrase"
       const total = sequenceState.selectedItems.length;
-      practiceProgress.style.textAlign = 'left'; // if you want it left-aligned
+      practiceProgress.style.textAlign = 'left'; 
       practiceProgress.textContent = `${index + 1}/${total} Phrase`;
   
-      // Show English + Translation text
       practiceEnglish.textContent = en;
       practiceTranslation.textContent = translatedText;
+  
+      // Update the practice status each time we switch to a new phrase
+      updatePracticeDetailsUI();
     }
   
-    // Called after each phrase sequence ends
     function onPhraseComplete() {
       sequenceState.currentIndex++;
       if (!sequenceState.isPaused && sequenceState.isPlaying) {
@@ -170,13 +202,10 @@ function createCollapsible(title, headerClass) {
       }
     }
   
-    // The main function to play the next phrase
     function playNext() {
       if (!sequenceState.isPlaying || sequenceState.isPaused) return;
   
-      // If we’ve reached the end
       if (sequenceState.currentIndex >= sequenceState.selectedItems.length) {
-        // If loop is enabled, reset index
         if (sequenceState.loop) {
           sequenceState.currentIndex = 0;
         } else {
@@ -184,24 +213,15 @@ function createCollapsible(title, headerClass) {
           return;
         }
       }
-  
-      // Prepare layout for the current phrase
       updateActiveLayout(sequenceState.currentIndex);
   
-      // Grab the Audio URLs from the item
       const item = sequenceState.selectedItems[sequenceState.currentIndex];
-      const englishUrl = item.data.audio.en; // e.g., item.audio.en in your data
-      // If you have multiple language codes, you might do:
-      //   const { languageCode } = ??? 
-      //   const frenchUrl = item.data.audio[languageCode];
-      // We'll assume you want "French" specifically:
-      const frenchUrl = item.data.audio.fr || item.data.audio[item.data.languageCode];
+      const englishUrl = item.data.audio.en;
+      const frenchUrl  = item.data.audio.fr || item.data.audio[item.data.languageCode];
   
-      // Fire up the chain
       playPhraseSequence(englishUrl, frenchUrl, currentAudioRef, onPhraseComplete);
     }
   
-    // Stop everything
     function stopSequence() {
       if (currentAudioRef.value) {
         currentAudioRef.value.pause();
@@ -218,11 +238,14 @@ function createCollapsible(title, headerClass) {
         sequenceState.durationTimer = null;
       }
   
-      // Hide practice-active, show intro
+      // Clear interval if it's running
+      if (sequenceState.updateInterval) {
+        clearInterval(sequenceState.updateInterval);
+        sequenceState.updateInterval = null;
+      }
+  
       practiceActive.style.display = 'none';
       practiceIntro.style.display = 'block';
-  
-      // Reset UI
       btnStart.style.display = 'inline-block';
       btnPauseResume.style.display = 'none';
       btnPauseResume.textContent = 'Pause';
@@ -231,48 +254,48 @@ function createCollapsible(title, headerClass) {
     return {
       start({ shuffle, loop, maxDuration }) {
         let selected = allItems.filter(item => item.selected);
-        if (!selected.length) {
-          alert('No items selected.');
-          return;
-        }
-  
-        // Shuffle if needed
+
         if (shuffle) {
           selected = shuffleArray(selected);
         }
-  
         sequenceState.selectedItems = selected;
-        sequenceState.loop = loop;
-        sequenceState.shuffle = shuffle;
+        sequenceState.loop     = loop;
+        sequenceState.shuffle  = shuffle;
         sequenceState.maxDuration = maxDuration;
-  
         sequenceState.currentIndex = 0;
         sequenceState.isPlaying = true;
-        sequenceState.isPaused = false;
+        sequenceState.isPaused  = false;
+        sequenceState.startTime = Date.now(); // Record start time
   
-        // Hide intro, show active
         practiceIntro.style.display = 'none';
         practiceActive.style.display = 'block';
   
-        // Hide start button, show pause button
         btnStart.style.display = 'none';
         btnPauseResume.style.display = 'inline-block';
-        btnPauseResume.textContent = 'Pause';
+        btnPauseResume.textContent   = 'Pause';
   
         // If user selected a duration limit
         if (maxDuration > 0) {
           const ms = maxDuration * 60000;
           sequenceState.durationTimer = setTimeout(() => {
-            alert(`Practice time of ${maxDuration} minute(s) ended.`);
             stopSequence();
           }, ms);
         }
   
+        // Start updating the UI every second
+        sequenceState.updateInterval = setInterval(() => {
+          if (sequenceState.isPlaying && !sequenceState.isPaused) {
+            updatePracticeDetailsUI();
+          }
+        }, 100);
+  
+        // Immediately update the UI to reflect selected options
+        updatePracticeDetailsUI();
         playNext();
       },
   
       pause() {
-        sequenceState.isPaused = true;
+        sequenceState.isPaused  = true;
         sequenceState.isPlaying = false;
         if (currentAudioRef.value) {
           currentAudioRef.value.pause();
@@ -280,10 +303,10 @@ function createCollapsible(title, headerClass) {
       },
   
       resume() {
-        sequenceState.isPaused = false;
+        sequenceState.isPaused  = false;
         sequenceState.isPlaying = true;
         if (currentAudioRef.value) {
-          currentAudioRef.value.currentTime = 0; // replay from start
+          currentAudioRef.value.currentTime = 0;
           currentAudioRef.value.play();
         } else {
           playNext();
