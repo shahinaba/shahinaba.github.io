@@ -34,7 +34,7 @@
       },
       {
         "name" : "Public Transportation",
-        "phrases_file" : "public_transportation.txt"
+        "phrases_file" : "public_transport.txt"
       },
       {
         "name" : "Restaurant",
@@ -51,7 +51,7 @@
       {
         "name" : "Other",
         "phrases_file" : "other.txt"
-      },
+      }
     ]
   },
   {

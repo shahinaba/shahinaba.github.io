@@ -111,11 +111,9 @@ def _generate_topic(lang_folder, phrases_file_name, lang_code):
     genLangData = lessonsGenData.get(lang_folder, {})
     genTopicPhrases = genLangData.get(topicPath, [])
     alreadyGenTopicPhrases = set(phrase["phrase"][EN_LANG_CODE] for phrase in genTopicPhrases)
-    print("***", genLangData, genTopicPhrases, alreadyGenTopicPhrases)
 
     phrases = _load_phrases(f"{LESSONS_DIR}/{lang_folder}/{phrases_file_name}")
     newPhrases = {phraseId: phrase for phraseId, phrase in enumerate(phrases) if phrase not in alreadyGenTopicPhrases}
-    print("==========AHHH", len(newPhrases), len(phrases), len(alreadyGenTopicPhrases))
     translationMaps = _get_translation_maps(newPhrases, lang_code)
 
     genAudioDir = f"{genDir}/{lang_folder}/{topicPath}/{GEN_AUDIO_DIR}"
@@ -134,7 +132,6 @@ def _generate_topic(lang_folder, phrases_file_name, lang_code):
             "audio": audioMap
         })
 
-    print(lessonsGenData)
 
     _save_generated_data(lessonsGenData, genDataFilePath)
 
