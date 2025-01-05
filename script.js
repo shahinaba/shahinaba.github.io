@@ -42,43 +42,56 @@ function createCollapsible(title, headerClass) {
   }
   
   /**
+   * Shuffle an array in place (Fisher-Yates)
+   */
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+  
+  /**
    * createSequenceController:
    *  - “Start” => sets up selected items, hides intro, shows active section
    *  - “Pause/Resume” => toggles between pausing and resuming current phrase
-   *  - automatically updates displayed phrase text/index in practice-active
+   *  - “Loop” => if enabled, once we reach the end, start over
+   *  - “Shuffle” => randomize selected items if checked
+   *  - “Duration” => if not 0, stop after X minutes
    */
   function createSequenceController(allItems, currentAudioRef) {
-    // Track which items are selected, current index, etc.
     const sequenceState = {
       selectedItems: [],
       currentIndex: 0,
       isPlaying: false,
-      isPaused: false
+      isPaused: false,
+      loop: false,
+      shuffle: false,
+      maxDuration: 0, // in minutes; 0 means no limit
+      durationTimer: null
     };
   
-    // Cache references to DOM elements for the “active” layout
+    // Grab DOM elements
     const practiceIntro       = document.getElementById('practice-intro');
     const practiceActive      = document.getElementById('practice-active');
     const practiceProgress    = document.getElementById('practice-progress');
     const practiceEnglish     = document.getElementById('practice-english');
     const practiceTranslation = document.getElementById('practice-translation');
+    const btnStart            = document.getElementById('practice-start-btn');
+    const btnPauseResume      = document.getElementById('practice-play-resume-btn');
   
-    // We’ll also reference the separate buttons
-    const btnStart       = document.getElementById('btn-start');
-    const btnPauseResume = document.getElementById('btn-pause-resume');
-  
-    // Display the current item’s text & progress
     function updateActiveLayout(index) {
       const currentItem = sequenceState.selectedItems[index];
       if (!currentItem) return;
   
       const { en, ...otherLangs } = currentItem.data.phrase;
-      // If you only have one extra language, pick the first
+      // Grab the first non-English language key
       const translations = Object.keys(otherLangs);
       const firstTranslationKey = translations[0];
       const translatedText = (firstTranslationKey && otherLangs[firstTranslationKey]) || '';
   
-      // Example: "5/18 Phrase"
+      // e.g., "5/18 Phrase"
       const total = sequenceState.selectedItems.length;
       practiceProgress.textContent = `${index + 1}/${total} Phrase`;
   
@@ -89,9 +102,16 @@ function createCollapsible(title, headerClass) {
   
     function playNext() {
       if (!sequenceState.isPlaying || sequenceState.isPaused) return;
+  
+      // If reached the end
       if (sequenceState.currentIndex >= sequenceState.selectedItems.length) {
-        stopSequence();
-        return;
+        // If loop is enabled, start from beginning
+        if (sequenceState.loop) {
+          sequenceState.currentIndex = 0;
+        } else {
+          stopSequence();
+          return;
+        }
       }
   
       // Update the text in the active layout
@@ -101,7 +121,7 @@ function createCollapsible(title, headerClass) {
       const row = sequenceState.selectedItems[sequenceState.currentIndex].element;
       const audioUrl = row.querySelector('.play-btn').dataset.audio;
   
-      // Stop any previous audio
+      // Stop previous audio
       if (currentAudioRef.value) {
         currentAudioRef.value.pause();
         currentAudioRef.value.currentTime = 0;
@@ -118,54 +138,79 @@ function createCollapsible(title, headerClass) {
       };
     }
   
-    // Called when we’re done or user closes modal
+    // Stop everything & reset
     function stopSequence() {
       if (currentAudioRef.value) {
         currentAudioRef.value.pause();
         currentAudioRef.value.currentTime = 0;
         currentAudioRef.value = null;
       }
-      // Reset internal state
+  
       sequenceState.isPlaying = false;
       sequenceState.isPaused = false;
       sequenceState.currentIndex = 0;
+  
+      // Clear any timer
+      if (sequenceState.durationTimer) {
+        clearTimeout(sequenceState.durationTimer);
+        sequenceState.durationTimer = null;
+      }
   
       // Hide practice-active, show intro
       practiceActive.style.display = 'none';
       practiceIntro.style.display = 'block';
   
-      // Show Start button, hide Pause/Resume
+      // Reset UI
       btnStart.style.display = 'inline-block';
       btnPauseResume.style.display = 'none';
       btnPauseResume.textContent = 'Pause';
     }
   
     return {
-      // Called on “Start” button click
-      start() {
-        sequenceState.selectedItems = allItems.filter(item => item.selected);
-        if (!sequenceState.selectedItems.length) {
+      start({ shuffle, loop, maxDuration }) {
+        // Gather selected items
+        let selected = allItems.filter(item => item.selected);
+        if (!selected.length) {
           alert('No items selected.');
           return;
         }
+  
+        // Apply shuffle if checked
+        if (shuffle) {
+          selected = shuffleArray(selected);
+        }
+  
+        sequenceState.selectedItems = selected;
+        sequenceState.loop = loop;
+        sequenceState.shuffle = shuffle;
+        sequenceState.maxDuration = maxDuration; // in minutes
   
         sequenceState.currentIndex = 0;
         sequenceState.isPlaying = true;
         sequenceState.isPaused = false;
   
-        // Hide the intro, show the active layout
+        // Hide intro, show active
         practiceIntro.style.display = 'none';
         practiceActive.style.display = 'block';
   
-        // Show Pause button, hide Start
+        // Hide start, show pause button
         btnStart.style.display = 'none';
         btnPauseResume.style.display = 'inline-block';
         btnPauseResume.textContent = 'Pause';
   
+        // If user selected a duration limit
+        if (maxDuration > 0) {
+          // Convert minutes to ms
+          const ms = maxDuration * 60000;
+          sequenceState.durationTimer = setTimeout(() => {
+            alert(`Practice time of ${maxDuration} minute(s) ended.`);
+            stopSequence();
+          }, ms);
+        }
+  
         playNext();
       },
   
-      // Called when user presses the “Pause/Resume” button
       pause() {
         sequenceState.isPaused = true;
         sequenceState.isPlaying = false;
@@ -173,31 +218,25 @@ function createCollapsible(title, headerClass) {
           currentAudioRef.value.pause();
         }
       },
+  
       resume() {
         sequenceState.isPaused = false;
         sequenceState.isPlaying = true;
         if (currentAudioRef.value) {
-          currentAudioRef.value.currentTime = 0; // replay from start
+          // Replay from start
+          currentAudioRef.value.currentTime = 0;
           currentAudioRef.value.play();
         } else {
           playNext();
         }
       },
   
-      // Called when user closes modal or we finish all phrases
       stop() {
         stopSequence();
-      },
-  
-      // Advance to the next item manually if needed (optional)
-      next() {
-        sequenceState.currentIndex++;
-        playNext();
-      },
+      }
     };
   }
   
-  // Synchronizes topic/language checkboxes
   function syncParentCheckbox(parentCheckbox, content) {
     const childCheckboxes = content.querySelectorAll('input[type="checkbox"]');
     const allChecked = Array.from(childCheckboxes).every(cb => cb.checked);
@@ -207,9 +246,9 @@ function createCollapsible(title, headerClass) {
     parentCheckbox.indeterminate = !allChecked && anyChecked;
   }
   
-  /**
+  /** 
    * Update the main “Practice Audio” button subtext & style 
-   * based on how many items are selected
+   * based on how many items are selected 
    */
   function updatePracticeAudioButton(practiceButton, practiceAudioSubtext, allItems) {
     const selectedCount = allItems.filter(item => item.selected).length;
@@ -224,31 +263,35 @@ function createCollapsible(title, headerClass) {
     }
   }
   
-  // --- Main setup ---
+  // --- Main DOMContentLoaded setup ---
   document.addEventListener('DOMContentLoaded', () => {
+    // References
     const lessonContainer = document.getElementById('lesson-container');
     const practiceAudioButton = document.getElementById('practice-audio');
     const practiceAudioSubtext = document.getElementById('practice-audio-subtext');
-  
-    // Modal
     const practiceModal = document.getElementById('practice-modal');
     const closeModalButton = document.getElementById('close-modal');
   
-    // “About to Practice X phrases”
+    // “Intro” UI elements
     const aboutToPractice = document.getElementById('about-to-practice');
-    
-    // Our two separate buttons
-    const btnStart = document.getElementById('btn-start');
-    const btnPauseResume = document.getElementById('btn-pause-resume');
+    const btnStart = document.getElementById('practice-start-btn');
   
-    // Audio reference & all items
+    // “Active” UI elements
+    const btnPauseResume = document.getElementById('practice-play-resume-btn');
+  
+    // Additional settings
+    const durationSelect = document.getElementById('practice-duration');
+    const shuffleCheck = document.getElementById('shuffle-check');
+    const loopCheck = document.getElementById('loop-check');
+  
+    // Track audio & items
     const currentAudio = { value: null };
     const allItems = [];
   
-    // Create the sequence controller (manages start/pause/resume/stop)
+    // Create the sequence controller
     let sequenceController = null;
   
-    // Show modal if button not disabled
+    // Show modal if the button isn’t disabled
     practiceAudioButton.addEventListener('click', () => {
       if (!practiceAudioButton.disabled) {
         practiceModal.style.display = 'block';
@@ -257,27 +300,40 @@ function createCollapsible(title, headerClass) {
       }
     });
   
-    // Close modal => stop audio
+    // Close modal => stop everything
     closeModalButton.addEventListener('click', () => {
       practiceModal.style.display = 'none';
-      if (sequenceController) sequenceController.stop();
+      if (sequenceController) {
+        sequenceController.stop();
+      }
     });
   
     // Clicking outside modal-content also closes
     window.addEventListener('click', (event) => {
       if (event.target === practiceModal) {
         practiceModal.style.display = 'none';
-        if (sequenceController) sequenceController.stop();
+        if (sequenceController) {
+          sequenceController.stop();
+        }
       }
     });
   
     // Start button
     btnStart.addEventListener('click', () => {
       if (!sequenceController) {
-        // Create it once
         sequenceController = createSequenceController(allItems, currentAudio);
       }
-      sequenceController.start();
+  
+      // Gather user-selected options
+      const selectedDuration = parseInt(durationSelect.value, 10); // minutes
+      const shuffleEnabled = shuffleCheck.checked;
+      const loopEnabled = loopCheck.checked;
+  
+      sequenceController.start({
+        shuffle: shuffleEnabled,
+        loop: loopEnabled,
+        maxDuration: selectedDuration
+      });
     });
   
     // Pause/Resume button
@@ -287,13 +343,12 @@ function createCollapsible(title, headerClass) {
         sequenceController.pause();
         btnPauseResume.textContent = 'Resume';
       } else {
-        // “Resume”
         sequenceController.resume();
         btnPauseResume.textContent = 'Pause';
       }
     });
   
-    // Build out the UI from genData (collapsible sections, tables, etc.)
+    // Build collapsible UI from genData
     genData.forEach(language => {
       const langDiv = createCollapsible(language.language, 'language-header');
       const langContent = langDiv.querySelector('.content');
@@ -330,7 +385,7 @@ function createCollapsible(title, headerClass) {
           `;
           allItems.push({ id: rowId, data: item, element: row });
   
-          // Handle row checkbox
+          // Row checkbox
           const rowCheckbox = row.querySelector('input[type="checkbox"]');
           rowCheckbox.addEventListener('change', () => {
             const foundItem = allItems.find(i => i.id === rowId);
@@ -347,7 +402,7 @@ function createCollapsible(title, headerClass) {
   
         topicContent.appendChild(table);
   
-        // Topic-level checkbox
+        // Topic checkbox
         topicCheckbox.addEventListener('change', () => {
           topicContent.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             cb.checked = topicCheckbox.checked;
@@ -363,7 +418,7 @@ function createCollapsible(title, headerClass) {
         langContent.appendChild(topicDiv);
       });
   
-      // Language-level checkbox
+      // Language checkbox
       langCheckbox.addEventListener('change', () => {
         langContent.querySelectorAll('input[type="checkbox"]').forEach(cb => {
           cb.checked = langCheckbox.checked;
@@ -378,14 +433,14 @@ function createCollapsible(title, headerClass) {
       lessonContainer.appendChild(langDiv);
     });
   
-    // Individual “Play” button for single row
+    // Individual “Play” button
     lessonContainer.addEventListener('click', event => {
       if (event.target.classList.contains('play-btn')) {
         playAudio(event.target.dataset.audio, currentAudio);
       }
     });
   
-    // Initial button state
+    // Initialize the button state
     updatePracticeAudioButton(practiceAudioButton, practiceAudioSubtext, allItems);
   });
   
