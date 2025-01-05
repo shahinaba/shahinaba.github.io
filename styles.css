@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin: 20px 0;
+}
+
+/* Practice Audio button */
+#practice-audio {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  max-width: 250px;
+  width: 80%;
+  background-color: gray;
+  opacity: 0.6; /* disabled look by default */
+}
+
+/* Subtext under "Practice Audio" */
+#practice-audio-text {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#practice-audio-subtext {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Enabled (green) state */
+#practice-audio.enabled {
+  background-color: green;
+  opacity: 1;
+}
+#practice-audio.enabled:hover {
+  background-color: darkgreen;
+}
+
+/* Modal overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content container */
+.modal-content {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Close button */
+#close-modal {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  float: right;
+}
+#close-modal:hover {
+  background-color: darkred;
+}
+
+/* “Start” / “Pause” / “Resume” button inside modal */
+#practice-start-btn,
+#practice-play-resume-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+#practice-start-btn:hover,
+#practice-play-resume-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Intro section (shows how many phrases you’re about to practice) */
+#practice-intro {
+  text-align: center;
+}
+
+/* Active practice section (hidden until “Start” is pressed) */
+#practice-active {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+#practice-progress {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+#practice-english,
+#practice-translation {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box; /* helps keep widths consistent with padding */
+  font-size: 24px;
+  margin-bottom: 12px; /* spacing between the two sections */
+}
+
+#practice-english {
+  background-color: #eee; /* light gray */
+}
+
+#practice-translation {
+  background-color: #ccc; /* slightly darker gray */
+}
+
+/* Collapsible headings, table, etc. */
+.language-header {
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 24px;
+  width: 100%;
+  display: inline-block;
+}
+.language-header:hover {
+  background-color: #003d80;
+}
+.topic-header {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 20px;
+  width: 100%;
+  display: inline-block;
+  border-top: 1px solid #fff;
+}
+.topic-header:hover {
+  background-color: #4d4d4d;
+}
+.content {
+  display: none;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 0 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #044f27;
+  color: white;
+  text-transform: uppercase;
+}
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+/* For checkboxes in collapsible sections */
+.checkbox-container {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+/* Individual "Play" button */
+.play-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.play-btn:hover {
+  background-color: darkblue;
+}
+
+/* Larger label styling */
+.option-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Styled dropdown */
+.styled-select {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Optional styling for each <option> */
+.styled-select option {
+  font-size: 16px;
+  padding: 6px;
+}
+
+/* Checkbox label for bigger text */
+.checkbox-label {
+  font-size: 16px;
+  cursor: pointer; /* so label is clickable */
+}
+
+/* Styled checkbox (just bigger dimension) */
+.styled-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  cursor: pointer;
+}
