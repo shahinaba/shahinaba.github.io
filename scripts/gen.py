@@ -12,6 +12,8 @@ GEN_DATA_FILE = "gen_data.json"
 LESSONS_FILE = f"{LESSONS_DIR}/lessons.json"
 EN_LANG_CODE = "en"
 
+GEN_JSON_FILE = "gen_data.js"
+
 def _load_generated_data(gen_data_file_path):
     if not os.path.exists(gen_data_file_path):
         return {}
@@ -35,7 +37,7 @@ def _load_json(filepath):
     return data
 
 
-def _load_topics():
+def _load_lessons():
     return _load_json(LESSONS_FILE)
 
 
@@ -44,7 +46,7 @@ def _print_div():
 
 
 def _print_lessons():
-    lessons = _load_topics()
+    lessons = _load_lessons()
     prettyLessons = json.dumps(lessons, indent=4)
     print(prettyLessons)
 
@@ -136,7 +138,7 @@ def _generate_topic(lang_folder, phrases_file_name, lang_code):
     _save_generated_data(lessonsGenData, genDataFilePath)
 
 def _generate_lesson_content():
-    lessons = _load_topics()
+    lessons = _load_lessons()
     numLessons = len(lessons)
     for lid, language in enumerate(lessons):
         _print_div()
@@ -162,8 +164,44 @@ def _generate_lesson_content():
             
 
 
-def _update_website():
-    pass
+def _update_website_data():
+    lessons = _load_lessons()
+    genData = _load_generated_data(f"{LESSONS_DIR}/{GEN_DIR}/{GEN_DATA_FILE}")
+    
+    jsGenData = []
+    for lang in lessons:
+        currentLang = {}
+        langName = lang["name"]
+        if lang["folder"] not in genData:
+            continue
+        
+        langTopics = []
+        for topic in lang["topics"]:
+            topicName = topic["name"]
+            topicPath = _get_base_name(topic["phrases_file"])
+            if topicPath not in genData[lang["folder"]]:
+                continue
+
+            genTopics = genData[lang["folder"]][topicPath]
+            
+            topicPhrases = []
+            for phrase in genTopics:
+                phraseData = {
+                    "phrase": phrase["phrase"],
+                    "audio": phrase["audio"]
+                }
+                topicPhrases.append(phraseData)
+            
+            langTopics.append({
+                "name": topicName,
+                "phrases": topicPhrases
+            })
+        currentLang["language"] = langName
+        currentLang["topics"] = langTopics
+        jsGenData.append(currentLang)
+    
+    with open(f"./{GEN_JSON_FILE}", "w") as file:
+        file.write(f"const genData = {json.dumps(jsGenData, indent=4)};")
 
 
 if __name__ == '__main__':
@@ -171,7 +209,7 @@ if __name__ == '__main__':
         _print_div()
         print("1. Show Lessons")
         print("2. Generate Lesson Content")
-        print("3. Update Website")
+        print("3. Update Website Data")
         print("4. Exit")
         _print_div()
         choice = input("Enter choice: ")
@@ -182,7 +220,7 @@ if __name__ == '__main__':
         elif choice == "2":
             _generate_lesson_content()
         elif choice == "3":
-            _update_website()
+            _update_website_data()
         elif choice == "4":
             break
         else:

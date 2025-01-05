@@ -1,19 +1,98 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>French</h1>
-<a href="lesson1.html"><h2>Mix</h2></a>
-<a href="at_the_coffee_shop.html"><h2>at_the_coffee_shop</h2></a>
-<a href="coffee_shop2.html"><h2>coffee shop2</h2></a>
-<a href="airport.html"><h2>airport2</h2></a>
-<a href="at_the_airport.html"><h2>airport1</h2></a>
-<a href="public_transport.html"><h2>public transport</h2></a>
-<a href="hotel.html"><h2>hotel</h2></a>
-<a href="department_store.html"><h2>department store</h2></a>
-<a href="grossery_store.html"><h2>grossery store</h2></a>
-<a href="tourist_info.html"><h2>tourist info</h2></a>
-<a href="train_station.html"><h2>train station</h2></a>
-<a href="restaurants.html"><h2>restaurants</h2></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Lessons</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        /* Collapsible button styling for language headers */
+        .language-header {
+            background-color: #0056b3; /* Blue for languages */
+            color: white;
+            cursor: pointer;
+            padding: 12px;
+            margin: 0;
+            border: none;
+            text-align: left;
+            font-size: 16px;
+            width: 100%; /* Extend the background */
+        }
+
+        .language-header:hover {
+            background-color: #003d80; /* Darker blue on hover */
+        }
+
+        /* Collapsible button styling for topic headers */
+        .topic-header {
+            background-color: gray; /* Gray for topics */
+            color: white;
+            cursor: pointer;
+            padding: 12px;
+            margin: 0;
+            border: none;
+            text-align: left;
+            font-size: 14px;
+            width: 100%; /* Extend the background */
+        }
+
+        .topic-header:hover {
+            background-color: #4d4d4d; /* Darker gray on hover */
+        }
+
+        /* Collapsible content styling */
+        .content {
+            display: none;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 0 12px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #044f27;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        /* Alternate row colors for phrases */
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Language Lessons</h1>
+    <div id="lesson-container"></div>
+    <script src="gen_data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
