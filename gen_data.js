@@ -2879,6 +2879,71 @@ const genData = [
                 ]
             },
             {
+                "name": "Verb: To Like",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "I like an orange",
+                            "fr": "j'aime bien une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/ddee36a981e95854db65276e3f6d374f.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/49f7b5d36004ccd2ec97eefd4935ac3e.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You like an orange",
+                            "fr": "Tu aimes une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/2854996cbd2c2e21a1522a15133922d2.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/acff5a4c3d576e3d7ae9b43df8a157c5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "He/She/One likes an orange",
+                            "fr": "Il/Elle/On aime une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/0f495ae4e3e2a4ce0da5bff54ab52cb5.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/7f02e9c76e4abd671b53697318279b64.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "We like an orange",
+                            "fr": "Nous aimons une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/1640ba8919e5234ec07d58f829dfe375.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/4bba1abf369687dc1ffde4d9ea711ee3.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You like an orange",
+                            "fr": "Tu aimes une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/2854996cbd2c2e21a1522a15133922d2.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/acff5a4c3d576e3d7ae9b43df8a157c5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "They like an orange",
+                            "fr": "Ils aiment une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_like/audio/6dde8b4578fe678cd76474be2639a2f5.mp3",
+                            "fr": "lessons/gen/french/verb_to_like/audio/0d770ef003e5a2b0e2d742c8b2ec70ad.mp3"
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Other",
                 "phrases": [
                     {
