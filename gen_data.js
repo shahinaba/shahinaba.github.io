@@ -2754,6 +2754,71 @@ const genData = [
                 ]
             },
             {
+                "name": "Verb: To Have",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "I have",
+                            "fr": "J'ai"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/3f432f3f4dff2b067e47844cae6e100c.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/c54177266a156199787eb536277ab9e4.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You have",
+                            "fr": "Tu as"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/00db7aae85aecb79c75afca7daa8f22e.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/02196dd909f8db5fe523d8025d44f994.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "He/She/One has",
+                            "fr": "Il/Elle/On a"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/318ff6ed0fe82290fa78a34792e47c7a.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/cb784596009fea8692e2656bf320846c.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "We have",
+                            "fr": "Nous avons"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/528c8cde4dcc92c42fa06ec28b4e3efd.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/11dbe100d14fef97635345b2b6eea607.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You have",
+                            "fr": "Tu as"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/00db7aae85aecb79c75afca7daa8f22e.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/02196dd909f8db5fe523d8025d44f994.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "They have",
+                            "fr": "Ils ont"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/2e5ae790844714985dac0ad1fabf3e4c.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/fe1c7d4d35c074f44843c569ff0e49e0.mp3"
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Other",
                 "phrases": [
                     {
