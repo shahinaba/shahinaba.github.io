@@ -3998,6 +3998,66 @@
                     "en": "lessons/gen/french/verb_to_be/audio/a3530d4b351fc4ef61125e35014cc523.mp3",
                     "fr": "lessons/gen/french/verb_to_be/audio/5d789c489afc53aff976fb435e83dcbe.mp3"
                 }
+            },
+            {
+                "phrase": {
+                    "en": "I am a student",
+                    "fr": "Je suis \u00e9tudiant"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/3c87018f806f689c66aa262971aed9fa.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/27663555f003dc8347856fdc175cce40.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You are a student",
+                    "fr": "Vous \u00eates \u00e9tudiant"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/08c17b391059adc71b9e016f19cf8319.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/82eb1c7cbd8b80254b25151dd689d5b6.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "He/She is a student",
+                    "fr": "Il/Elle est \u00e9tudiant"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/cc856846ee14cde0e7bff1b9a5360d9a.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/7a32daf03b8c117b7a36fa0cb7c18369.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We are students",
+                    "fr": "Nous sommes \u00e9tudiants"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/fcdc0b97bfb19cc7a942084ef16e8adb.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/29b8b56472bcee6e6a6d471796df5eb1.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You are students",
+                    "fr": "Vous \u00eates \u00e9tudiants"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/6050ed10597559fbb14b85cf215148bf.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/d6c07b8f2fbd25f745c7c0dd673c4e6a.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "They are students",
+                    "fr": "Ce sont des \u00e9tudiants"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_be/audio/9063932b62d8e9ce963ff44adb15ed25.mp3",
+                    "fr": "lessons/gen/french/verb_to_be/audio/3386ca218838c28f1e8beea16cdf72cc.mp3"
+                }
             }
         ],
         "verb_to_have": [

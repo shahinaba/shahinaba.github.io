@@ -1,6 +1,6 @@
-I am
-You are
-He/She/One is
-We are
-You are (plural)
-They are 
+I am a student
+You are a student
+He/She is a student
+We are students
+You are students
+They are students
