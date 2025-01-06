@@ -4183,6 +4183,68 @@
                     "fr": "lessons/gen/french/verb_to_like/audio/0d770ef003e5a2b0e2d742c8b2ec70ad.mp3"
                 }
             }
+        ],
+        "verb_go_going": [
+            {
+                "phrase": {
+                    "en": "I go/I am going to Paris",
+                    "fr": "je vais/je vais \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/9014fa5599490c9e450fbec43a5adc99.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/0997a54f7983817544722c057c5ae7ac.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You go/You are going to Paris",
+                    "fr": "Tu pars/Tu vas \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/aa593f76a1eaf3cf59dfb178f8de5a3b.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/cb1084418b4061c2d107d9064ebc74b3.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "He/She goes/He/She is going to Paris",
+                    "fr": "Il/Elle va/Il/Elle va \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/7a58df9a4c97314bce2dd5a1a95c63a4.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/cef9c3aa0534951e29ad7592254cd50d.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We go/We are going to Paris",
+                    "fr": "On va/On va \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/c270b981a2690f1c3870f622cc941464.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/d036310692609166c4104989f90b3b70.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You go/You are going to Paris",
+                    "fr": "Tu pars/Tu vas \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/aa593f76a1eaf3cf59dfb178f8de5a3b.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/cb1084418b4061c2d107d9064ebc74b3.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "They go/They are going to Paris",
+                    "fr": "Ils vont/Ils vont \u00e0 Paris"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_go_going/audio/7360861015a966a6418777faedf6e5e7.mp3",
+                    "fr": "lessons/gen/french/verb_go_going/audio/6b33a9ad5f5c531c4ddc85bc79e257a6.mp3"
+                }
+            }
         ]
     }
 }
