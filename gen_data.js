@@ -2815,6 +2815,66 @@ const genData = [
                             "en": "lessons/gen/french/verb_to_have/audio/2e5ae790844714985dac0ad1fabf3e4c.mp3",
                             "fr": "lessons/gen/french/verb_to_have/audio/fe1c7d4d35c074f44843c569ff0e49e0.mp3"
                         }
+                    },
+                    {
+                        "phrase": {
+                            "en": "I have an orange",
+                            "fr": "j'ai une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/d9615f72f7f8a382a62a58d9dc045626.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/6da8e0c7283f33b74167ae986698a98d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You have an orange",
+                            "fr": "Tu as une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/fdcaa69e028a4c744f03e9111c4a3f8c.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/192eb9d2d16b256b43cded142aa55623.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "He/She/One has an orange",
+                            "fr": "Il/Elle/On a une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/da78c2d8f544c8340ecd69f57be16874.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/692af2e88e53efaea67ee70e91c5e7eb.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "We have an orange",
+                            "fr": "Nous avons une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/0a6e6a95b6b10a104ed4781440d1d7b8.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/bb0629a461d9335b43ba25dac8f9f3cc.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You have an orange",
+                            "fr": "Tu as une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/fdcaa69e028a4c744f03e9111c4a3f8c.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/192eb9d2d16b256b43cded142aa55623.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "They have an orange",
+                            "fr": "Ils ont une orange"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_to_have/audio/3c6d68a8356117408190d729250c6a06.mp3",
+                            "fr": "lessons/gen/french/verb_to_have/audio/e68a49571b96776423c7a497229c665f.mp3"
+                        }
                     }
                 ]
             },
