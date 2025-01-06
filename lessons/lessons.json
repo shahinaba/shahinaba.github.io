@@ -61,6 +61,10 @@
         "phrases_file" : "verb_to_be.txt"
       },
       {
+        "name" : "Verb: To Have",
+        "phrases_file" : "verb_to_have.txt"
+      },
+      {
         "name" : "Other",
         "phrases_file" : "other.txt"
       }
