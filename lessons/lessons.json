@@ -69,6 +69,10 @@
         "phrases_file" : "verb_to_like.txt"
       },
       {
+        "name" : "Verb: Can",
+        "phrases_file" : "verb_can.txt"
+      },
+      {
         "name" : "Verb: To Go/Going",
         "phrases_file" : "verb_go_going.txt"
       },

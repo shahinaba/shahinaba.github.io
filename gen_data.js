@@ -3004,6 +3004,71 @@ const genData = [
                 ]
             },
             {
+                "name": "Verb: Can",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "I can draw",
+                            "fr": "je peux dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/b989305ff1c8365d714887f5952bf15e.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/d1b7670b7c18e7d693e28e8450a89961.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You can draw",
+                            "fr": "Tu peux dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/19872b6a475bfbcd17e205bd1b728215.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/6ab95f2c5a39e3cff78b70bf506506d9.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "He/She can draw",
+                            "fr": "Il/Elle sait dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/6ddc84ad7d24db2fccb93b862df381f7.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/751a7367ec76c9dad14bc5e7c62cd487.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "We can draw",
+                            "fr": "Nous pouvons dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/ff1360f224c1ccf9e416ae43741afb52.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/8d7f5d03c31dec13cdb448a3cfbd7e27.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "You can draw",
+                            "fr": "Tu peux dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/19872b6a475bfbcd17e205bd1b728215.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/6ab95f2c5a39e3cff78b70bf506506d9.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "They can draw",
+                            "fr": "Ils peuvent dessiner"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/verb_can/audio/5592c4109fda7b014ed13e8857795369.mp3",
+                            "fr": "lessons/gen/french/verb_can/audio/6ac65d96f675ecbdeb4c8b8907043e78.mp3"
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Verb: To Go/Going",
                 "phrases": [
                     {
