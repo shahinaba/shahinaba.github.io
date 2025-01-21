@@ -382,6 +382,16 @@
                     "en": "lessons/gen/french/airport_2/audio/25518fd1de6dc53f5dbecb31c71324a1.mp3",
                     "fr": "lessons/gen/french/airport_2/audio/2dde3387a373f65d5375c725e7b509d8.mp3"
                 }
+            },
+            {
+                "phrase": {
+                    "en": "May I see your passport please?",
+                    "fr": "Puis-je voir votre passeport s'il vous pla\u00eet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/airport_2/audio/ec746d82dcbe0a25fc4a9931d396ac36.mp3",
+                    "fr": "lessons/gen/french/airport_2/audio/a206cfe96ef92c0010e076298575688e.mp3"
+                }
             }
         ],
         "coffee_shop": [
