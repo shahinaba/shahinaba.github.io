@@ -1,0 +1,92 @@
+[
+  {
+    "name" : "French",
+    "language_code" : "fr",
+    "folder" : "french",
+    "topics" : [
+      {
+        "name" : "Airport",
+        "phrases_file" : "airport.txt"
+      },
+      {
+        "name" : "Airport 2",
+        "phrases_file" : "airport_2.txt"
+      },
+      {
+        "name" : "Coffee Shop",
+        "phrases_file" : "coffee_shop.txt"
+      },
+      {
+        "name" : "Coffee Shop 2",
+        "phrases_file" : "coffee_shop_2.txt"
+      },
+      {
+        "name" : "Department Store",
+        "phrases_file" : "department_store.txt"
+      },
+      {
+        "name" : "Grocery Store",
+        "phrases_file" : "grocery_store.txt"
+      },
+      {
+        "name" : "Hotel",
+        "phrases_file" : "hotel.txt"
+      },
+      {
+        "name" : "Public Transportation",
+        "phrases_file" : "public_transport.txt"
+      },
+      {
+        "name" : "Restaurant",
+        "phrases_file" : "restaurant.txt"
+      },
+      {
+        "name" : "Tourit Info",
+        "phrases_file" : "tourist_info.txt"
+      },
+      {
+        "name" : "Train Station",
+        "phrases_file" : "train_station.txt"
+      },
+      {
+        "name" : "Months and Week Days",
+        "phrases_file" : "months_and_week_days.txt"
+      },
+      {
+        "name" : "Numbers",
+        "phrases_file" : "numbers.txt"
+      },
+      {
+        "name" : "Verb: To Be",
+        "phrases_file" : "verb_to_be.txt"
+      },
+      {
+        "name" : "Verb: To Have",
+        "phrases_file" : "verb_to_have.txt"
+      },
+      {
+        "name" : "Verb: To Like",
+        "phrases_file" : "verb_to_like.txt"
+      },
+      {
+        "name" : "Verb: Can",
+        "phrases_file" : "verb_can.txt"
+      },
+      {
+        "name" : "Verb: To Go/Going",
+        "phrases_file" : "verb_go_going.txt"
+      },
+      {
+        "name" : "Other",
+        "phrases_file" : "other.txt"
+      }
+    ]
+  },
+  {
+    "name" : "German",
+    "language_code" : "de",
+    "folder" : "german",
+    "topics" : [
+    ]
+  }
+]

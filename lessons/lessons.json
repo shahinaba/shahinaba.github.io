@@ -9,10 +9,6 @@
         "phrases_file" : "airport.txt"
       },
       {
-        "name" : "Airport 2",
-        "phrases_file" : "airport_2.txt"
-      },
-      {
         "name" : "Coffee Shop",
         "phrases_file" : "coffee_shop.txt"
       },

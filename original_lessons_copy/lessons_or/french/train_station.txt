@@ -1,0 +1,39 @@
+Where is the ticket counter?
+
+Can I buy a ticket to [destination]?
+
+What time is the next train to [destination]?
+
+Which platform does the train to [destination] depart from?
+
+Is this the express train?
+
+Where can I find a timetable?
+
+How long is the journey to [destination]?
+
+Do I need to make a reservation for this train?
+
+Can I change my ticket?
+
+Is there a restroom nearby?
+
+Where can I find the departure board?
+
+Do you have any discounted tickets?
+
+Can I get a refund for my ticket?
+
+Is there a waiting area?
+
+Can I bring luggage on the train?
+
+Where is the information desk?
+
+Is there a place to store my luggage?
+
+Can you help me find my platform?
+
+Do you have any maps of the train routes?
+
+Can I pay with a credit card?
