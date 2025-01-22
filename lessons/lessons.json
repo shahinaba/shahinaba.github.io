@@ -45,6 +45,10 @@
         "phrases_file" : "restaurant.txt"
       },
       {
+        "name" : "Restaurant_3",
+        "phrases_file" : "restaurant_3.txt"
+      },
+      {
         "name" : "Tourit Info",
         "phrases_file" : "tourist_info.txt"
       },
