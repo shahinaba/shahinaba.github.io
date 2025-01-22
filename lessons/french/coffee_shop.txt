@@ -1,16 +1,36 @@
-"Hello, I would like a coffee, please." 
-"I'd like a cappuccino/latte/espresso, please." 
-"A small/medium/large, please." 
-"To have here, please." 
-"To have to go, please." 
-"With milk and sugar, please." 
-"Do you have any pastries or croissants" 
-"I'll have a croissant, please." 
-"How much is it" 
-"Do you have Wi-Fi" 
-"Is there a restroom" 
-"Thank you very much." 
-"Please." 
-"Excuse me."
-"I don't speak French very well." 
-"Could you please speak slowly" 
+Hello, I would like a coffee, please. 
+I'd like a cappuccino, please. 
+I'd like a hot chocolate, please. 
+A small/medium/large, please. 
+To have here, please. 
+To have to go, please. 
+With milk and sugar, please. 
+Do you have any pastries or croissants? 
+I'll have a croissant, please. 
+How much is it?
+Do you have Wi-Fi? 
+Is there a restroom? 
+Thank you very much. 
+I don't speak French very well. 
+Could you please speak slowly?
+Could you please repeat it slowly?
+Good morning!
+Do you have any recommendations?
+Can I have a menu, please?
+I would like a coffee, please.
+Is there a special dish of the day?
+Can I have this drink with almond milk?
+Do you have almond milk?
+Do you have any pastries?
+How much is this coffee?
+Can I have it to go, please?
+Is there a restroom?
+Do you offer Wi-Fi?
+Do you have decaf coffee?
+Can I have some water, please?
+Glass of red wine, please
+Glass of white wine please
+Do you take credit cards?
+Can I pay in cash?
+What are your hours of operation?
+Can I get a receipt, please?

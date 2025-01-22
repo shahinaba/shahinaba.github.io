@@ -180,18 +180,6 @@
                     "en": "lessons/gen/french/airport/audio/f8aa407085cb202137179b79ac48a1eb.mp3",
                     "fr": "lessons/gen/french/airport/audio/a4b0781277353326d0b363db40b2c83e.mp3"
                 }
-            }
-        ],
-        "airport_2": [
-            {
-                "phrase": {
-                    "en": "Good morning/afternoon/evening.",
-                    "fr": "Bonjour/apr\u00e8s-midi/soir."
-                },
-                "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/380ad7871fbcf00b5aff3964404cfe08.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/4435cbd0226c783a1f7c06d645e57fa7.mp3"
-                }
             },
             {
                 "phrase": {
@@ -199,8 +187,18 @@
                     "fr": "Puis-je vous aider?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/aa79a8418b99dc8362b574e44c685509.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/814bf3b8f225d6e1a309d2b8c3abc757.mp3"
+                    "en": "lessons/gen/french/airport/audio/aa79a8418b99dc8362b574e44c685509.mp3",
+                    "fr": "lessons/gen/french/airport/audio/814bf3b8f225d6e1a309d2b8c3abc757.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you help me, please",
+                    "fr": "Pourriez-vous m'aider, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/airport/audio/e166b2f9dd21ded5a6e6c01b6e560d6f.mp3",
+                    "fr": "lessons/gen/french/airport/audio/cde3e2a193ce49e384c2e8ea794ac05d.mp3"
                 }
             },
             {
@@ -209,8 +207,8 @@
                     "fr": "Veuillez me montrer votre carte d'embarquement."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/c7f8421b4883cd6b6312b5369ece54ff.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/6fe2b0bd93539c322eb3cf7b9872fa52.mp3"
+                    "en": "lessons/gen/french/airport/audio/c7f8421b4883cd6b6312b5369ece54ff.mp3",
+                    "fr": "lessons/gen/french/airport/audio/6fe2b0bd93539c322eb3cf7b9872fa52.mp3"
                 }
             },
             {
@@ -219,8 +217,8 @@
                     "fr": "Votre vol embarque maintenant \u00e0 la porte 12."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/4855f1a22fb323a27a93dedaa8a23a24.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/456835361ca35dbe85af93dc1175b4dc.mp3"
+                    "en": "lessons/gen/french/airport/audio/4855f1a22fb323a27a93dedaa8a23a24.mp3",
+                    "fr": "lessons/gen/french/airport/audio/456835361ca35dbe85af93dc1175b4dc.mp3"
                 }
             },
             {
@@ -229,8 +227,8 @@
                     "fr": "Veuillez attacher votre ceinture de s\u00e9curit\u00e9."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/16ecc9575005b5ff92e9cfad8e5cf4b6.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/5d82e8e7d8f9e3b61f9e904214b46a6c.mp3"
+                    "en": "lessons/gen/french/airport/audio/16ecc9575005b5ff92e9cfad8e5cf4b6.mp3",
+                    "fr": "lessons/gen/french/airport/audio/5d82e8e7d8f9e3b61f9e904214b46a6c.mp3"
                 }
             },
             {
@@ -239,8 +237,8 @@
                     "fr": "Nous avons atterri."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/f90b97a736423d6a0026863f605deb8d.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/84b492354a0ac3e9938132d6a6182a77.mp3"
+                    "en": "lessons/gen/french/airport/audio/f90b97a736423d6a0026863f605deb8d.mp3",
+                    "fr": "lessons/gen/french/airport/audio/84b492354a0ac3e9938132d6a6182a77.mp3"
                 }
             },
             {
@@ -249,8 +247,8 @@
                     "fr": "Je voudrais m'enregistrer."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/4086670e14b4d044cf6772677eb14676.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/430e5d09c2353fd00d214d13b35276d3.mp3"
+                    "en": "lessons/gen/french/airport/audio/4086670e14b4d044cf6772677eb14676.mp3",
+                    "fr": "lessons/gen/french/airport/audio/430e5d09c2353fd00d214d13b35276d3.mp3"
                 }
             },
             {
@@ -259,8 +257,8 @@
                     "fr": "O\u00f9 se trouve le comptoir d\u2019enregistrement ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/cd173ef9c9238d0370a6d7486712c42f.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/3344f41c2be9eee3be5e6a6a4b1c6135.mp3"
+                    "en": "lessons/gen/french/airport/audio/cd173ef9c9238d0370a6d7486712c42f.mp3",
+                    "fr": "lessons/gen/french/airport/audio/3344f41c2be9eee3be5e6a6a4b1c6135.mp3"
                 }
             },
             {
@@ -269,8 +267,8 @@
                     "fr": "Avez-vous un bagage enregistr\u00e9 ou simplement un bagage \u00e0 main ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/b9eee8ff6a2c6b4474b05a3c16bea3a3.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/b76115447c32cf0132cee32024cb0ee0.mp3"
+                    "en": "lessons/gen/french/airport/audio/b9eee8ff6a2c6b4474b05a3c16bea3a3.mp3",
+                    "fr": "lessons/gen/french/airport/audio/b76115447c32cf0132cee32024cb0ee0.mp3"
                 }
             },
             {
@@ -279,8 +277,8 @@
                     "fr": "Puis-je voir votre passeport ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/55fb04ca1becce66c978d23679648647.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/e70e062436fefdb26bac19d2336b27dc.mp3"
+                    "en": "lessons/gen/french/airport/audio/55fb04ca1becce66c978d23679648647.mp3",
+                    "fr": "lessons/gen/french/airport/audio/e70e062436fefdb26bac19d2336b27dc.mp3"
                 }
             },
             {
@@ -289,8 +287,8 @@
                     "fr": "Votre vol est retard\u00e9 d'une heure."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/f55ba6cf5fb6f2039af4dcca4432432b.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/3f65b9ccfe61064dd882732a89186e3c.mp3"
+                    "en": "lessons/gen/french/airport/audio/f55ba6cf5fb6f2039af4dcca4432432b.mp3",
+                    "fr": "lessons/gen/french/airport/audio/3f65b9ccfe61064dd882732a89186e3c.mp3"
                 }
             },
             {
@@ -299,8 +297,8 @@
                     "fr": "Videz vos poches, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/5d0bb5bb32d38eb916c25f2c002f67da.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/c16323aece4377c78f90d7d69e0dcf19.mp3"
+                    "en": "lessons/gen/french/airport/audio/5d0bb5bb32d38eb916c25f2c002f67da.mp3",
+                    "fr": "lessons/gen/french/airport/audio/c16323aece4377c78f90d7d69e0dcf19.mp3"
                 }
             },
             {
@@ -309,8 +307,8 @@
                     "fr": "Qu'y a-t-il dans ton sac ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/0a43fc8c9a182f3104e7d2f044ceab65.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/c1aa0d683518542cef399785865f8b57.mp3"
+                    "en": "lessons/gen/french/airport/audio/0a43fc8c9a182f3104e7d2f044ceab65.mp3",
+                    "fr": "lessons/gen/french/airport/audio/c1aa0d683518542cef399785865f8b57.mp3"
                 }
             },
             {
@@ -319,18 +317,18 @@
                     "fr": "Quel est le but de votre s\u00e9jour ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/092382ef8ee37ab365ee5ad0639a0917.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/0eb170250e2d434ed7847070721374e2.mp3"
+                    "en": "lessons/gen/french/airport/audio/092382ef8ee37ab365ee5ad0639a0917.mp3",
+                    "fr": "lessons/gen/french/airport/audio/0eb170250e2d434ed7847070721374e2.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "Do you need a visa to enter the country?",
-                    "fr": "Avez-vous besoin d'un visa pour entrer dans le pays ?"
+                    "en": "Do I need a visa to enter the country?",
+                    "fr": "Ai-je besoin d\u2019un visa pour entrer dans le pays ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/d9d85ec5eec1cac388f52743a7d23386.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/eb8059413f46f9ba8acb0c7db421cb14.mp3"
+                    "en": "lessons/gen/french/airport/audio/e4081180ccd62490903127db7f9f879c.mp3",
+                    "fr": "lessons/gen/french/airport/audio/f39eb9f68ec0b2377207473e26326e57.mp3"
                 }
             },
             {
@@ -339,8 +337,8 @@
                     "fr": "Puis-je voir votre passeport s'il vous pla\u00eet ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/ec746d82dcbe0a25fc4a9931d396ac36.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/a206cfe96ef92c0010e076298575688e.mp3"
+                    "en": "lessons/gen/french/airport/audio/ec746d82dcbe0a25fc4a9931d396ac36.mp3",
+                    "fr": "lessons/gen/french/airport/audio/a206cfe96ef92c0010e076298575688e.mp3"
                 }
             },
             {
@@ -349,8 +347,8 @@
                     "fr": "Puis-je modifier mon vol/r\u00e9servation ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/5bad7303aeb69ca8ad4c7bfd41baceb6.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/984e25eeae698a1d39878403091b8d3c.mp3"
+                    "en": "lessons/gen/french/airport/audio/5bad7303aeb69ca8ad4c7bfd41baceb6.mp3",
+                    "fr": "lessons/gen/french/airport/audio/984e25eeae698a1d39878403091b8d3c.mp3"
                 }
             },
             {
@@ -359,8 +357,8 @@
                     "fr": "Vous souhaitez modifier votre vol ou votre r\u00e9servation ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/3a1fbdd7752887b53e22f3073cef190e.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/756092c424b3346080087a080db96ffd.mp3"
+                    "en": "lessons/gen/french/airport/audio/3a1fbdd7752887b53e22f3073cef190e.mp3",
+                    "fr": "lessons/gen/french/airport/audio/756092c424b3346080087a080db96ffd.mp3"
                 }
             },
             {
@@ -369,8 +367,8 @@
                     "fr": "Bon voyage et merci d'avoir vol\u00e9 avec nous."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/d66b0ce82ef57f93f8d6d39b6b775325.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/b4bd7f4ea383de87c87723ab7a5a5631.mp3"
+                    "en": "lessons/gen/french/airport/audio/d66b0ce82ef57f93f8d6d39b6b775325.mp3",
+                    "fr": "lessons/gen/french/airport/audio/b4bd7f4ea383de87c87723ab7a5a5631.mp3"
                 }
             },
             {
@@ -379,262 +377,120 @@
                     "fr": "J'esp\u00e8re que vous passerez un agr\u00e9able vol."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/airport_2/audio/25518fd1de6dc53f5dbecb31c71324a1.mp3",
-                    "fr": "lessons/gen/french/airport_2/audio/5a90d01ea465ff1cd5a5f7ad5186cbb9.mp3"
+                    "en": "lessons/gen/french/airport/audio/25518fd1de6dc53f5dbecb31c71324a1.mp3",
+                    "fr": "lessons/gen/french/airport/audio/5a90d01ea465ff1cd5a5f7ad5186cbb9.mp3"
                 }
             }
         ],
         "coffee_shop": [
             {
                 "phrase": {
-                    "en": "\"Hello, I would like a coffee, please.\"",
-                    "fr": "\"Bonjour, je voudrais un caf\u00e9, s'il vous pla\u00eet.\""
+                    "en": "Hello, I would like a coffee, please.",
+                    "fr": "Bonjour, je voudrais un caf\u00e9, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/99b01aa8ab620b1b5eb120399d8889f8.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/023ca3df7762c14a1d9ced4c2f53f4ae.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/38caecfcdcda49d8edf44beda8e8315e.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/d3df803bf34aa2d515a53a77f723b494.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"I'd like a cappuccino/latte/espresso, please.\"",
-                    "fr": "\"Je voudrais un cappuccino/latte/expresso, s'il vous pla\u00eet.\""
+                    "en": "I'd like a cappuccino, please.",
+                    "fr": "Je voudrais un cappuccino, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/e23f969136b23b130f16bb9413d17ec3.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/aef052791b71f926922e12b7d409e7c7.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/c7098a7311117a54eea0402adad858f2.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/df571fe14fc78e9b7196dfade4f213bc.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"A small/medium/large, please.\"",
-                    "fr": "\"Un petit/moyen/grand, s'il vous pla\u00eet.\""
+                    "en": "I'd like a hot chocolate, please.",
+                    "fr": "Je voudrais un chocolat chaud, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/22660b01eac74a51e24ba3b73f561422.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/9a31e867ca388dbf880d2513c80eb05f.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/d2bafc08d5d78ffd178f01fc13c668ba.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/53e0701e729c483e94983e69bc4f333a.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"To have here, please.\"",
-                    "fr": "\"A avoir ici, s'il vous pla\u00eet.\""
+                    "en": "A small/medium/large, please.",
+                    "fr": "Un petit/moyen/grand, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/4d02ef2b279eb4ddf62b80072c9f1429.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/7bef41c85d195ad481caac1ed5aa8cd9.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/b7963dbfbd7a2f932baed23bc26ceaa5.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/7ce3680cdb7a50639a8b6c51b340422c.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"To have to go, please.\"",
-                    "fr": "\"Je dois y aller, s'il te pla\u00eet.\""
+                    "en": "To have here, please.",
+                    "fr": "\u00c0 avoir ici, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/7d355facb1b3be0f05a308d14de7147d.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/3994881b71c29ff651d52aa5ecdc28b8.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/672f196cc2fc58b33f0a42f6b32712bf.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/2410d2c17585808cd1603c1b849dc60e.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"With milk and sugar, please.\"",
-                    "fr": "\"Avec du lait et du sucre, s'il vous pla\u00eet.\""
+                    "en": "To have to go, please.",
+                    "fr": "Je dois y aller, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/1c2d1b977ee105572d7cd283c2f15c6f.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/8c5b7a8609e6e1b5b503ba0f6c28791e.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/6c8a279d5f988be2df5b747eaaebf050.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/4d590e91dd209e9ec05cc68eeffbd918.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"Do you have any pastries or croissants\"",
-                    "fr": "\"Avez-vous des viennoiseries ou des croissants\""
+                    "en": "With milk and sugar, please.",
+                    "fr": "Avec du lait et du sucre, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/9159188b372a6fe023197bcc0cd37f35.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/f46c944e125b3f7d297996085826d969.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/1ad088041f36591419aad02184b150f8.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/a563299e957dfeaf827c6575927f4e45.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"I'll have a croissant, please.\"",
-                    "fr": "\"Je vais prendre un croissant, s'il te pla\u00eet.\""
+                    "en": "Do you have any pastries or croissants?",
+                    "fr": "Avez-vous des viennoiseries ou des croissants ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/11edb8569c9a10ea7ac36b13eea1cd6a.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/59de9922e69ce1521e0b216cd98ffecf.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/d1e772bdc866046187c1c801f3b3ab8b.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/5cd350a28b6821f247003529e43eba13.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"How much is it\"",
-                    "fr": "\"Combien \u00e7a co\u00fbte\""
+                    "en": "I'll have a croissant, please.",
+                    "fr": "Je vais prendre un croissant, s'il vous pla\u00eet."
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/49bcdc117f7d042b7fb15091cc293633.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/8abb5256ae5f983c0d59f4601931c4ba.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/5c97bd0ceca7f3b14237c35be484327f.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/d6170cd9dfb27d41d4feb02044f2dee5.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"Do you have Wi-Fi\"",
-                    "fr": "\"Avez-vous une connexion Wi-Fi\""
+                    "en": "How much is it?",
+                    "fr": "Combien \u00e7a co\u00fbte?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/033d73a01f55ea2fdd4dba5b07a9f6bf.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/bf584594dde392fd9eab0654da397843.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/6ca7524a641bc8a23f065e79b46be256.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/5a2b6dd0e3e05a03fd3ad38bfc3958db.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "\"Is there a restroom\"",
-                    "fr": "\"Y a-t-il des toilettes\""
+                    "en": "Do you have Wi-Fi?",
+                    "fr": "Avez-vous une connexion Wi-Fi\u00a0?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/552c07f7718662ea25f90b26d7684cc7.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/a4f431da51b85260569fcd4dd7d03897.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "\"Thank you very much.\"",
-                    "fr": "\"Merci beaucoup.\""
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/695b04ebc7ed7b27ee48daba98b7413a.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/7812bfc0ff35a92fb6ff9e72513ef93c.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "\"Please.\"",
-                    "fr": "\"S'il te pla\u00eet.\""
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/9cfc26d6219aa26b803a3e3c524dd065.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/cbb321a83f664ba3241c63c4111f2cc8.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "\"Excuse me.\"",
-                    "fr": "\"Excusez-moi.\""
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/e2abcfd531f6c9a33f49365e0dd5457d.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/b5f41a084bdd59bc4969f6ba1e4709ee.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "\"I don't speak French very well.\"",
-                    "fr": "\"Je ne parle pas tr\u00e8s bien fran\u00e7ais.\""
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/8eb0dc5a6955c419c7f5a055f887eb72.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/14ea84a9b97cf4d43ac0fc068f371e4c.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "\"Could you please speak slowly\"",
-                    "fr": "\"Pourriez-vous s'il vous pla\u00eet parler lentement\""
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop/audio/fd2d072526076e5c845f0c7938d724c7.mp3",
-                    "fr": "lessons/gen/french/coffee_shop/audio/ce39d67f53eb667135e723fed0eef98a.mp3"
-                }
-            }
-        ],
-        "coffee_shop_2": [
-            {
-                "phrase": {
-                    "en": "Good morning!",
-                    "fr": "Bonjour!"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/d56bf970b2bd8c25ab544c337531c117.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/c02834c6c53bb8ce9a0307fcc43ec0d5.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have any recommendations?",
-                    "fr": "Avez-vous des recommandations?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/cce7e400d2ff49ff8c6b9b752b45efab.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/47d45e3766b89c68bc9da2a69f584984.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I have a menu, please?",
-                    "fr": "Puis-je avoir un menu, s'il vous pla\u00eet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/a89271a73e7711bf630647e75f0808a6.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/ce5e69a0e863beb911abc4aa3843f906.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I would like a coffee, please.",
-                    "fr": "Je voudrais un caf\u00e9, s'il vous pla\u00eet."
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/a4579e70755d35aea9c53e4c3e04008c.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/a04f7d4f35032e8b68eca2eb4bf75360.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is there a special of the day?",
-                    "fr": "Y a-t-il un sp\u00e9cial du jour ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/e36c5a2eea55b4e90721ecadbb846fd3.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/91afcf4625cc16b4f72d5240e7cef4f6.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I have this drink with almond milk?",
-                    "fr": "Puis-je prendre cette boisson avec du lait d'amande ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/46ac34676e69f22dbb4f1e6127704bbf.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/69994aa9fe9881ab0691fb88dfd74f17.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have any pastries?",
-                    "fr": "Avez-vous des p\u00e2tisseries ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/ba7c16b04b4adb968d8eab785a04f538.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/f1b8611c4a566cca3c52127b681dbb50.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "How much is this coffee?",
-                    "fr": "Combien co\u00fbte ce caf\u00e9 ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/a662cd0440d8994f19839cbc0857f32e.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/7dc5d4b8a7e90fee3b64bf1067fa53cc.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I have it to go, please?",
-                    "fr": "Puis-je l'avoir \u00e0 emporter, s'il vous pla\u00eet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/11dca3d48192c28f6b1db9a2e1793189.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/d703a575d4866e3a2189fec800cbecb8.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/5e81cc7b70bd5120a58ed861ca65c625.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/75e3d117a3a0b92490a61a3cedbd9499.mp3"
                 }
             },
             {
@@ -643,8 +499,158 @@
                     "fr": "Y a-t-il des toilettes ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/70d37ed6782a4bed647c6446e3d11922.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/6940023ee6c228c8b47578d4020f3748.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/70d37ed6782a4bed647c6446e3d11922.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/6940023ee6c228c8b47578d4020f3748.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Thank you very much.",
+                    "fr": "Merci beaucoup."
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/9d197f9a18345df50e509646802a8386.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/4868d950059facbdbefd6474646e0bf8.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I don't speak French very well.",
+                    "fr": "Je ne parle pas tr\u00e8s bien fran\u00e7ais."
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/e0dc1e32202b1fe204e514d163946080.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/1d029480fd0a9430ef2cfffdccc3d6af.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you please speak slowly?",
+                    "fr": "Pourriez-vous s'il vous pla\u00eet parler lentement ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/de9cef8dd9137b8b5822a280f1cb7512.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/f9c4d48f0bdff2707dc7aae5996827fb.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you please repeat it slowly?",
+                    "fr": "Pourriez-vous s'il vous pla\u00eet r\u00e9p\u00e9ter lentement\u00a0?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/13cd8014e8f8a6a55bec046a9be9fc5d.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/b27c50e52d63780f4b7d887d87cf0f09.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Good morning!",
+                    "fr": "Bonjour!"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/d56bf970b2bd8c25ab544c337531c117.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/c02834c6c53bb8ce9a0307fcc43ec0d5.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have any recommendations?",
+                    "fr": "Avez-vous des recommandations?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/cce7e400d2ff49ff8c6b9b752b45efab.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/47d45e3766b89c68bc9da2a69f584984.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I have a menu, please?",
+                    "fr": "Puis-je avoir un menu, s'il vous pla\u00eet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/a89271a73e7711bf630647e75f0808a6.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/ce5e69a0e863beb911abc4aa3843f906.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I would like a coffee, please.",
+                    "fr": "Je voudrais un caf\u00e9, s'il vous pla\u00eet."
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/a4579e70755d35aea9c53e4c3e04008c.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/a04f7d4f35032e8b68eca2eb4bf75360.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is there a special dish of the day?",
+                    "fr": "Y a-t-il un plat sp\u00e9cial du jour ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/f2d284d6539fd8e2ea03d13b2f26f2e0.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/de412a2a1074eebf3e773ca75d7bdbbc.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I have this drink with almond milk?",
+                    "fr": "Puis-je prendre cette boisson avec du lait d'amande ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/46ac34676e69f22dbb4f1e6127704bbf.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/69994aa9fe9881ab0691fb88dfd74f17.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have almond milk?",
+                    "fr": "Avez-vous du lait d'amande ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/cd80ff4020f992f389135c35ca3962db.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/f3ee66c71cd405b4c8dd378dd4ee67fd.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have any pastries?",
+                    "fr": "Avez-vous des p\u00e2tisseries ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/ba7c16b04b4adb968d8eab785a04f538.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/f1b8611c4a566cca3c52127b681dbb50.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How much is this coffee?",
+                    "fr": "Combien co\u00fbte ce caf\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/a662cd0440d8994f19839cbc0857f32e.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/7dc5d4b8a7e90fee3b64bf1067fa53cc.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I have it to go, please?",
+                    "fr": "Puis-je l'avoir \u00e0 emporter, s'il vous pla\u00eet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/11dca3d48192c28f6b1db9a2e1793189.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/d703a575d4866e3a2189fec800cbecb8.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is there a restroom?",
+                    "fr": "Y a-t-il des toilettes ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/70d37ed6782a4bed647c6446e3d11922.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/6940023ee6c228c8b47578d4020f3748.mp3"
                 }
             },
             {
@@ -653,18 +659,8 @@
                     "fr": "Offrez-vous le Wi-Fi ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/5d17c898ac081b1e4f0eea2588836fba.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/5dccc7abe73b3aa8ebac55635a44ae69.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I get a refill, please?",
-                    "fr": "Puis-je avoir une recharge, s'il vous pla\u00eet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/c8703f93d90b46273a8e259f67422891.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/893cead42e8cf1b59e17c26f2b2903fa.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/5d17c898ac081b1e4f0eea2588836fba.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/5dccc7abe73b3aa8ebac55635a44ae69.mp3"
                 }
             },
             {
@@ -673,18 +669,8 @@
                     "fr": "Avez-vous du caf\u00e9 d\u00e9caf\u00e9in\u00e9 ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/f0f67c613a5a2504207321fbc92ea66b.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/ee048beb0c65ca902f203239a1a6b71b.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is there a quiet place to sit?",
-                    "fr": "Y a-t-il un endroit calme pour s'asseoir ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/afb9be414ae366c092868362d1974721.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/5080c13cb12c9b1fc034c06f8502cf61.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/f0f67c613a5a2504207321fbc92ea66b.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/ee048beb0c65ca902f203239a1a6b71b.mp3"
                 }
             },
             {
@@ -693,8 +679,28 @@
                     "fr": "Puis-je avoir de l'eau, s'il vous pla\u00eet ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/e7f9c90ffdf43ef9a68a35b6f0e34074.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/87080433922a707f37a264606e06efd2.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/e7f9c90ffdf43ef9a68a35b6f0e34074.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/87080433922a707f37a264606e06efd2.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Glass of red wine, please",
+                    "fr": "Un verre de vin rouge, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/40b8986cb8f35caf77139088ab11b8eb.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/325c03db88eddf09737680cfc09ceea5.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Glass of white wine please",
+                    "fr": "Un verre de vin blanc s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/coffee_shop/audio/b18f482765fe5a97e15b16b5c580af80.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/500e6a186d6d57bc7e6b6a8e6394a6dc.mp3"
                 }
             },
             {
@@ -703,8 +709,8 @@
                     "fr": "Acceptez-vous les cartes de cr\u00e9dit ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/3f001e43668e970d0956cd3998bd211b.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/ea7676d82284266869706427ba6a9072.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/3f001e43668e970d0956cd3998bd211b.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/ea7676d82284266869706427ba6a9072.mp3"
                 }
             },
             {
@@ -713,8 +719,8 @@
                     "fr": "Puis-je payer en esp\u00e8ces ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/be97a5a90ad669b5e32e14df1a92395e.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/eccc026f36e2d3b801a5d8073206dd0e.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/be97a5a90ad669b5e32e14df1a92395e.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/eccc026f36e2d3b801a5d8073206dd0e.mp3"
                 }
             },
             {
@@ -723,18 +729,8 @@
                     "fr": "Quelles sont vos heures d'ouverture ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/a2c863ed6e32289c5fffb1678f51b3be.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/5aca5d791a9bcf6a01b6346f3f84eb28.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have soy milk?",
-                    "fr": "Avez-vous du lait de soja ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/54366a1ea7ce8d38ed97abf42344d4c6.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/72818ac8697e56aed0edc3625936889e.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/a2c863ed6e32289c5fffb1678f51b3be.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/5aca5d791a9bcf6a01b6346f3f84eb28.mp3"
                 }
             },
             {
@@ -743,8 +739,8 @@
                     "fr": "Puis-je avoir un re\u00e7u, s'il vous pla\u00eet ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/coffee_shop_2/audio/8e60dc18b6752f115d0cf734aecd5004.mp3",
-                    "fr": "lessons/gen/french/coffee_shop_2/audio/f9b3f23d275769e0ba5bc6a613fc6235.mp3"
+                    "en": "lessons/gen/french/coffee_shop/audio/8e60dc18b6752f115d0cf734aecd5004.mp3",
+                    "fr": "lessons/gen/french/coffee_shop/audio/f9b3f23d275769e0ba5bc6a613fc6235.mp3"
                 }
             }
         ],
@@ -1265,16 +1261,6 @@
             },
             {
                 "phrase": {
-                    "en": "Is there a laundry service available?",
-                    "fr": "Y a-t-il un service de blanchisserie disponible ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/hotel/audio/5686b8a09e68340b1b87ad183ca63552.mp3",
-                    "fr": "lessons/gen/french/hotel/audio/0aecd0a880881abd293c7befad51060e.mp3"
-                }
-            },
-            {
-                "phrase": {
                     "en": "How do I call room service?",
                     "fr": "Comment appeler le service de chambre ?"
                 },
@@ -1351,6 +1337,118 @@
                 "audio": {
                     "en": "lessons/gen/french/hotel/audio/954e6164407f43ea683918f2407ff695.mp3",
                     "fr": "lessons/gen/french/hotel/audio/4e584eff70408f959f07ef0f05cdaacb.mp3"
+                }
+            }
+        ],
+        "information": [
+            {
+                "phrase": {
+                    "en": "Could you please repeat that?",
+                    "fr": "Pourriez-vous s'il vous pla\u00eet r\u00e9p\u00e9ter cela ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/51c61dfeec2ab5eb0aa0838aefe51c0a.mp3",
+                    "fr": "lessons/gen/french/information/audio/e0d506bb2170dcc5c25f90bd0bf7411c.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you help me, please?",
+                    "fr": "Pourriez-vous m'aider, s'il vous pla\u00eet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/cb1ce3660d6806e0cf92a9d6d2c6556d.mp3",
+                    "fr": "lessons/gen/french/information/audio/48906c5ce9946333b8d160967b11fdf8.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I didn't quite catch that.",
+                    "fr": "Je n'ai pas bien compris."
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/5b9499a0d4e8baa739c542178ea4f4c4.mp3",
+                    "fr": "lessons/gen/french/information/audio/8554dc4f2924c5789826fc1eeb6807ac.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What do you mean by busy?",
+                    "fr": "Qu'entends-tu par occup\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/148c7b691dde90bdf26565acfc8c0511.mp3",
+                    "fr": "lessons/gen/french/information/audio/ad7fcd0767fe5b067f01134e9c928e09.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you explain that in more detail?",
+                    "fr": "Pourriez-vous expliquer cela plus en d\u00e9tail ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/32765a99e310a16f86aefefa06b5bd71.mp3",
+                    "fr": "lessons/gen/french/information/audio/9c243a32d4c72e4d3af1d10057c727aa.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I'm not sure I understand.",
+                    "fr": "Je ne suis pas s\u00fbr de comprendre."
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/3b6343e794eda030058ff088c2eb2744.mp3",
+                    "fr": "lessons/gen/french/information/audio/56a317bd6194e868653c820f79054994.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can you give me an example?",
+                    "fr": "Pouvez-vous me donner un exemple ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/a45cc2c28e26979486fa41ba321a4b91.mp3",
+                    "fr": "lessons/gen/french/information/audio/987d75c32d782956e24fdebea2fd43bd.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What's the difference between these options?",
+                    "fr": "Quelle est la diff\u00e9rence entre ces options ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/46176530a698cbe8b6d877fe278aaece.mp3",
+                    "fr": "lessons/gen/french/information/audio/252a59a2532ce18a2efd8e475ac23958.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where can I find a metro station?",
+                    "fr": "O\u00f9 puis-je trouver une station de m\u00e9tro ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/d802bd4002e8b654236f2f858aebed15.mp3",
+                    "fr": "lessons/gen/french/information/audio/1abc9f97fd493ddd4b884a13e7926dcc.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How does this work?",
+                    "fr": "Comment cela marche-t-il?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/3cf9064d67a8acc754449d33a3508603.mp3",
+                    "fr": "lessons/gen/french/information/audio/294b6bd6a15e97a33e7d4343ba92ac99.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What's the best way to travel to Paris?",
+                    "fr": "Quelle est la meilleure fa\u00e7on de voyager \u00e0 Paris ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/information/audio/fd7cc85506c56672230d44ca2694c268.mp3",
+                    "fr": "lessons/gen/french/information/audio/0f43f6c5a93a4d50fc66d56a2c241d58.mp3"
                 }
             }
         ],
@@ -1458,11 +1556,11 @@
             {
                 "phrase": {
                     "en": "What time is the last train?",
-                    "fr": "A quelle heure est le dernier train ?"
+                    "fr": "\u00c0 quelle heure est le dernier train ?"
                 },
                 "audio": {
                     "en": "lessons/gen/french/public_transport/audio/e7d105c7ac4b023cbd1df58a8fe5dc19.mp3",
-                    "fr": "lessons/gen/french/public_transport/audio/c649624832e0cf05c5c29621b47444b3.mp3"
+                    "fr": "lessons/gen/french/public_transport/audio/6e9a39268d799b7df45488dd2d4e6830.mp3"
                 }
             },
             {
@@ -1553,6 +1651,196 @@
                 "audio": {
                     "en": "lessons/gen/french/public_transport/audio/07c0ee737ca7695c0e74d3ba7bb69fc3.mp3",
                     "fr": "lessons/gen/french/public_transport/audio/20b28634079875a3a3413b07fd590517.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is the ticket counter?",
+                    "fr": "O\u00f9 est la billetterie ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/d59def33435a5981bef1f870f40aa735.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/83806f86ced070e013683aca7f567d7a.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I buy a ticket to London?",
+                    "fr": "Puis-je acheter un billet pour Londres ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/b6a6bdc114cf5f899bdbf5b130cae183.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/b3c443b2aeeffe34ccbc7eee24023e52.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What time is the next train to London?",
+                    "fr": "\u00c0 quelle heure est le prochain train pour Londres ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/e40941fb52718ef4078817f8ac2b8fee.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/25c5e988f4e1810a62d9deed9a403154.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Which platform does the train to London depart from?",
+                    "fr": "De quel quai part le train pour Londres ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/20417704a77feadc14cb9d600c02b07c.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/036b1e812d902dd31121f9d861881df8.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is this the express train?",
+                    "fr": "Est-ce le train express ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/0fe2148aa25affa0c4820b77fe920a7c.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/8b52134f3ce9045f4149937a2394f959.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where can I find a timetable?",
+                    "fr": "O\u00f9 puis-je trouver un horaire ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/b664e21eae32db575dbe2f08d1764546.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/3c8f1b45e069c0906973d092cd31ef5c.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How long is the journey to London?",
+                    "fr": "Combien de temps dure le voyage jusqu'\u00e0 Londres ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/5a31021a5d2f855ecdb8cd93eb2e4896.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/3f19eb26152820e0fdd6c48de8cf2b84.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do I need to make a reservation for this train?",
+                    "fr": "Dois-je faire une r\u00e9servation pour ce train ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/bb9ef87c2e76877b8771801b12767cf8.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/ce2fee58071340b3ff0a37ef1b8e83d3.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I change my ticket?",
+                    "fr": "Puis-je modifier mon billet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/843929fa61e66875fb2a4b34ff4dca04.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/d96312b3712bec99295dceb45d03fb33.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is there a restroom nearby?",
+                    "fr": "Y a-t-il des toilettes \u00e0 proximit\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/9abed904fa231e7ff39a35a1b95dda90.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/e4faf9d6e5a4969e00456999fd45a0b1.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where can I find the departure board?",
+                    "fr": "O\u00f9 puis-je trouver le tableau des d\u00e9parts ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/4f944ac15d93f461e980dca841a7f03f.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/efc37ca082dea88ca42c427f3d3adc4c.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have any discounted tickets?",
+                    "fr": "Avez-vous des billets \u00e0 prix r\u00e9duit ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/9bb7539a5b55efd18e2cbadc7743fb2b.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/97e5d152b9f4878e063b726851d2a200.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I get a refund for my ticket?",
+                    "fr": "Puis-je obtenir le remboursement de mon billet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/69506980a1cd75c97b61a5662adb19b4.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/feb7b0e8ef0c29a40248b5ccb7d3b040.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is there a waiting area?",
+                    "fr": "Y a-t-il une zone d'attente ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/1357561acac4073ccd0f127cc8c4687f.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/34ed48a8e28d7c599e83359b8d9bc0dd.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is the information desk?",
+                    "fr": "O\u00f9 est le bureau d'information ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/5e24058e080c64698343074d7751fe71.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/f30b79d5bee156822080c2351defebc6.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Is there a place to store my luggage?",
+                    "fr": "Y a-t-il un endroit pour stocker mes bagages ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/4a49484c3146973d9e644067f03b396b.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/f34f7c95ab99a9f46e32041959e4afeb.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can you help me find my platform?",
+                    "fr": "Pouvez-vous m'aider \u00e0 trouver ma plateforme ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/67aaeaba2375d619c1bd2fd56ccc9a13.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/a1694c1cc63fd3535abf2d5a526bba8e.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have any maps of the train routes?",
+                    "fr": "Avez-vous des plans des itin\u00e9raires des trains ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/1c82cc8f301ec1782c55fd624ca7da1b.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/3fcfc27fb8f6df1a59d319f990db5e32.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can I pay with a credit card?",
+                    "fr": "Puis-je payer avec une carte de cr\u00e9dit ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/public_transport/audio/895c7e0eb81dd613eee8e94eba74c647.mp3",
+                    "fr": "lessons/gen/french/public_transport/audio/6ab00e83827a87ce1aedf8b8c0ff8b8d.mp3"
                 }
             }
         ],
@@ -1758,6 +2046,178 @@
                 }
             }
         ],
+        "restaurant_2": [
+            {
+                "phrase": {
+                    "en": "I have an allergy to shrimp and shrimp dressing",
+                    "fr": "Je suis allergique aux crevettes et \u00e0 la vinaigrette aux crevettes"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/212f72127e3ee8498b260fa75f7b9420.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/18f4151f07108848f8d40fd6a0e7d743.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I want my steak well done, please",
+                    "fr": "Je veux que mon steak soit bien cuit, s'il te pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/e48cb61bfed242f03a0521a62fcdb606.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/842e3fa3466ee4ca7596b77c25137a90.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I want my steak medium, please",
+                    "fr": "Je veux mon steak moyen, s'il te pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/eaeb2b5d53217582ec9ae3720b4493e1.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/93c3ccf0a116bb8ceb25669d236be93e.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I want my steak juicy, but no red meat, please",
+                    "fr": "Je veux mon steak juteux, mais pas de viande rouge, s'il te pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/681b9c91dc457af56e5097399d956aa7.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/c90fddaf56e3b0de49c2289abbc96dd2.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Glass of tap water, please",
+                    "fr": "Un verre d'eau du robinet, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/d518f6632cd885c4122cea21af7d88be.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/0da6741b4187137d99c8ab994cb70715.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have a water at room temperature",
+                    "fr": "Avez-vous de l'eau \u00e0 temp\u00e9rature ambiante"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/98c5bbaecc3bf6b31ce26367d93a318b.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/cc5f7d50347371057b313a1b9f309ab8.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Bottle of still water, please",
+                    "fr": "Bouteille d'eau plate, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/2fd36820894695e4fbd1df1a95ce2d86.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/d78a05eeaa028e1ecef3c2c75179c6eb.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Bottle of sparkling water, please",
+                    "fr": "Une bouteille d'eau gazeuse, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/43fc41d5e5bd8380203f6d9eecf6bb6c.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/0b016df0323404c8d639d7dc6fd9056e.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have a menu in English, please",
+                    "fr": "Avez-vous un menu en anglais, s'il vous pla\u00eet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/7bc1890e7dbc0e3c3ba385b6f73875a0.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/07e208529b2b4c7e3199d0bfa1e6696e.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Could you recommend me something with chicken",
+                    "fr": "Pourriez-vous me recommander quelque chose avec du poulet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/ccb9e0d8a1e42eb3a197fd9431009e84.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/64861f6767b8e9c234706a3c8546359c.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I would like a chicken sandwich, french fry and green salad, please",
+                    "fr": "Je voudrais un sandwich au poulet, des frites et une salade verte, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/37f2477086819ba751a3c4281b5bd613.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/a1c88f9dfc722968e8ccdb07f7365a78.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I would like a chicken sandwich and grilled vegetables, please",
+                    "fr": "Je voudrais un sandwich au poulet et des l\u00e9gumes grill\u00e9s, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/13d7bd3f29e2757d1a6adf98fd75f5a2.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/2467685eac99120f7d0d9f9fdd8f3598.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What can you recommend me for dessert?",
+                    "fr": "Que pouvez-vous me recommander comme dessert ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/187951959a489dc1acc2af33fa1cb4d5.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/227dcedc4347009b196a5e52387328f1.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What is your most popular dessert?",
+                    "fr": "Quel est votre dessert le plus appr\u00e9ci\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/0c59d3cf8b2c882f5201d500e5eb0318.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/1b7590a68b8f30b2b5df9959d681d817.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have a red house wine?",
+                    "fr": "Avez-vous un vin rouge maison ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/947dd7c837d2273d9d4571364e253eb0.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/bbb449bcba6aac5d1a403b8ee0854073.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you have a local beer?",
+                    "fr": "Avez-vous une bi\u00e8re locale ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/3ee961a691a335a826ab06d999a0df9d.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/a1e6c9060b03f298f4e606ad520ba830.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What is your most popular beer?",
+                    "fr": "Quelle est votre bi\u00e8re la plus populaire ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/e554595a43739d767c5138fb201f391e.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/7c17af0a85f9d8484f5bd43a82fbec2a.mp3"
+                }
+            }
+        ],
         "tourist_info": [
             {
                 "phrase": {
@@ -1861,16 +2321,6 @@
             },
             {
                 "phrase": {
-                    "en": "Can you provide information on local customs and etiquette?",
-                    "fr": "Pouvez-vous fournir des informations sur les coutumes et l\u2019\u00e9tiquette locales\u00a0?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/tourist_info/audio/a94f974a60fc31e810f440b5916abcb2.mp3",
-                    "fr": "lessons/gen/french/tourist_info/audio/f719a15478a28aa16f199eed36024440.mp3"
-                }
-            },
-            {
-                "phrase": {
                     "en": "Where can I find the nearest restroom?",
                     "fr": "O\u00f9 puis-je trouver les toilettes les plus proches ?"
                 },
@@ -1958,207 +2408,15 @@
                     "en": "lessons/gen/french/tourist_info/audio/dc5bfe8c72a63cec61eda14d0a75726d.mp3",
                     "fr": "lessons/gen/french/tourist_info/audio/5d0651f1dfe1fed3c7af0b089dc86f56.mp3"
                 }
-            }
-        ],
-        "train_station": [
-            {
-                "phrase": {
-                    "en": "Where is the ticket counter?",
-                    "fr": "O\u00f9 est la billetterie ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/d59def33435a5981bef1f870f40aa735.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/83806f86ced070e013683aca7f567d7a.mp3"
-                }
             },
             {
                 "phrase": {
-                    "en": "Can I buy a ticket to London?",
-                    "fr": "Puis-je acheter un billet pour Londres ?"
+                    "en": "I am looking for the grossery store or supermarket",
+                    "fr": "Je cherche l'\u00e9picerie ou le supermarch\u00e9"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/train_station/audio/b6a6bdc114cf5f899bdbf5b130cae183.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/b3c443b2aeeffe34ccbc7eee24023e52.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "What time is the next train to London?",
-                    "fr": "\u00c0 quelle heure est le prochain train pour Londres ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/e40941fb52718ef4078817f8ac2b8fee.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/25c5e988f4e1810a62d9deed9a403154.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Which platform does the train to London depart from?",
-                    "fr": "De quel quai part le train pour Londres ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/20417704a77feadc14cb9d600c02b07c.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/036b1e812d902dd31121f9d861881df8.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is this the express train?",
-                    "fr": "Est-ce le train express ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/0fe2148aa25affa0c4820b77fe920a7c.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/8b52134f3ce9045f4149937a2394f959.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Where can I find a timetable?",
-                    "fr": "O\u00f9 puis-je trouver un horaire ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/b664e21eae32db575dbe2f08d1764546.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/3c8f1b45e069c0906973d092cd31ef5c.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "How long is the journey to London?",
-                    "fr": "Combien de temps dure le voyage jusqu'\u00e0 Londres ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/5a31021a5d2f855ecdb8cd93eb2e4896.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/3f19eb26152820e0fdd6c48de8cf2b84.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do I need to make a reservation for this train?",
-                    "fr": "Dois-je faire une r\u00e9servation pour ce train ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/bb9ef87c2e76877b8771801b12767cf8.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/ce2fee58071340b3ff0a37ef1b8e83d3.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I change my ticket?",
-                    "fr": "Puis-je modifier mon billet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/843929fa61e66875fb2a4b34ff4dca04.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/d96312b3712bec99295dceb45d03fb33.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is there a restroom nearby?",
-                    "fr": "Y a-t-il des toilettes \u00e0 proximit\u00e9 ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/9abed904fa231e7ff39a35a1b95dda90.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/e4faf9d6e5a4969e00456999fd45a0b1.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Where can I find the departure board?",
-                    "fr": "O\u00f9 puis-je trouver le tableau des d\u00e9parts ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/4f944ac15d93f461e980dca841a7f03f.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/efc37ca082dea88ca42c427f3d3adc4c.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have any discounted tickets?",
-                    "fr": "Avez-vous des billets \u00e0 prix r\u00e9duit ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/9bb7539a5b55efd18e2cbadc7743fb2b.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/97e5d152b9f4878e063b726851d2a200.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I get a refund for my ticket?",
-                    "fr": "Puis-je obtenir le remboursement de mon billet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/69506980a1cd75c97b61a5662adb19b4.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/feb7b0e8ef0c29a40248b5ccb7d3b040.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is there a waiting area?",
-                    "fr": "Y a-t-il une zone d'attente ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/1357561acac4073ccd0f127cc8c4687f.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/34ed48a8e28d7c599e83359b8d9bc0dd.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I bring luggage on the train?",
-                    "fr": "Puis-je apporter des bagages dans le train ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/290ab5bf1942dfb68a91815e4d00d59f.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/4acad4be4a20e1adf619d647268326fb.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Where is the information desk?",
-                    "fr": "O\u00f9 est le bureau d'information ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/5e24058e080c64698343074d7751fe71.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/f30b79d5bee156822080c2351defebc6.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Is there a place to store my luggage?",
-                    "fr": "Y a-t-il un endroit pour stocker mes bagages ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/4a49484c3146973d9e644067f03b396b.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/f34f7c95ab99a9f46e32041959e4afeb.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can you help me find my platform?",
-                    "fr": "Pouvez-vous m'aider \u00e0 trouver ma plateforme ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/67aaeaba2375d619c1bd2fd56ccc9a13.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/a1694c1cc63fd3535abf2d5a526bba8e.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have any maps of the train routes?",
-                    "fr": "Avez-vous des plans des itin\u00e9raires des trains ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/1c82cc8f301ec1782c55fd624ca7da1b.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/3fcfc27fb8f6df1a59d319f990db5e32.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Can I pay with a credit card?",
-                    "fr": "Puis-je payer avec une carte de cr\u00e9dit ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/train_station/audio/895c7e0eb81dd613eee8e94eba74c647.mp3",
-                    "fr": "lessons/gen/french/train_station/audio/6ab00e83827a87ce1aedf8b8c0ff8b8d.mp3"
+                    "en": "lessons/gen/french/tourist_info/audio/8a159751ec47092bd809522c35f5c3bb.mp3",
+                    "fr": "lessons/gen/french/tourist_info/audio/eda63d682ea7b3db7af0d620a2e5d043.mp3"
                 }
             }
         ],
@@ -2963,6 +3221,68 @@
                 "audio": {
                     "en": "lessons/gen/french/verb_go_going/audio/26401a2033ea6dcdccaed70fd2cb6959.mp3",
                     "fr": "lessons/gen/french/verb_go_going/audio/2a6c055f0cc0b9a62e34496b48d4e7b7.mp3"
+                }
+            }
+        ],
+        "verb_to_take": [
+            {
+                "phrase": {
+                    "en": "I take",
+                    "fr": "je prends"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/f36e42f6b188719c5e486a589aec3a32.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/cc44c6d2c5fc970007a9a32692a8be27.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You take",
+                    "fr": "Tu prends"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/939965ff6c7253c5c4c63d877e26eaa3.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/85397bcf440a79bd2159e875d68de973.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "He/She takes",
+                    "fr": "Il/Elle prend"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/664560b4f50168cb4544868036e8300a.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/f519af5d649f6f10102114242bbb2f50.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We take",
+                    "fr": "Nous prenons"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/87dc5a86ccc79c48bcc85e0bf20d2ad4.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/2e85804a22e5b85855e8dd654fba8e27.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "You take",
+                    "fr": "Tu prends"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/939965ff6c7253c5c4c63d877e26eaa3.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/85397bcf440a79bd2159e875d68de973.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "They take",
+                    "fr": "Ils prennent"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/verb_to_take/audio/7401f0e4b19bfe948b3170c2ba59f0db.mp3",
+                    "fr": "lessons/gen/french/verb_to_take/audio/5aa9a66361d7cb4f909a5180a201337a.mp3"
                 }
             }
         ],
@@ -3965,178 +4285,6 @@
                 "audio": {
                     "en": "lessons/gen/french/other/audio/66443fc64a86a1f73837702099627f8d.mp3",
                     "fr": "lessons/gen/french/other/audio/717c50e501e9992108d977a207cde7d0.mp3"
-                }
-            }
-        ],
-        "restaurant_3": [
-            {
-                "phrase": {
-                    "en": "I have an allergy to shrimp and shrimp dressing",
-                    "fr": "Je suis allergique aux crevettes et \u00e0 la vinaigrette aux crevettes"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/212f72127e3ee8498b260fa75f7b9420.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/18f4151f07108848f8d40fd6a0e7d743.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I want my steak well done, please",
-                    "fr": "Je veux que mon steak soit bien cuit, s'il te pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/e48cb61bfed242f03a0521a62fcdb606.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/842e3fa3466ee4ca7596b77c25137a90.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I want my steak medium, please",
-                    "fr": "Je veux mon steak moyen, s'il te pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/eaeb2b5d53217582ec9ae3720b4493e1.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/93c3ccf0a116bb8ceb25669d236be93e.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I want my steak juicy, but no red meat, please",
-                    "fr": "Je veux mon steak juteux, mais pas de viande rouge, s'il te pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/681b9c91dc457af56e5097399d956aa7.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/c90fddaf56e3b0de49c2289abbc96dd2.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Glass of tap water, please",
-                    "fr": "Un verre d'eau du robinet, s'il vous pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/d518f6632cd885c4122cea21af7d88be.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/0da6741b4187137d99c8ab994cb70715.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have a water at room temperature",
-                    "fr": "Avez-vous de l'eau \u00e0 temp\u00e9rature ambiante"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/98c5bbaecc3bf6b31ce26367d93a318b.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/cc5f7d50347371057b313a1b9f309ab8.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Bottle of still water, please",
-                    "fr": "Bouteille d'eau plate, s'il vous pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/2fd36820894695e4fbd1df1a95ce2d86.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/d78a05eeaa028e1ecef3c2c75179c6eb.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Bottle of sparkling water, please",
-                    "fr": "Une bouteille d'eau gazeuse, s'il vous pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/43fc41d5e5bd8380203f6d9eecf6bb6c.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/0b016df0323404c8d639d7dc6fd9056e.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have a menu in English, please",
-                    "fr": "Avez-vous un menu en anglais, s'il vous pla\u00eet ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/7bc1890e7dbc0e3c3ba385b6f73875a0.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/07e208529b2b4c7e3199d0bfa1e6696e.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Could you recommend me something with chicken",
-                    "fr": "Pourriez-vous me recommander quelque chose avec du poulet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/ccb9e0d8a1e42eb3a197fd9431009e84.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/64861f6767b8e9c234706a3c8546359c.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I would like a chicken sandwich, french fry and green salad, please",
-                    "fr": "Je voudrais un sandwich au poulet, des frites et une salade verte, s'il vous pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/37f2477086819ba751a3c4281b5bd613.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/a1c88f9dfc722968e8ccdb07f7365a78.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "I would like a chicken sandwich and grilled vegetables, please",
-                    "fr": "Je voudrais un sandwich au poulet et des l\u00e9gumes grill\u00e9s, s'il vous pla\u00eet"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/13d7bd3f29e2757d1a6adf98fd75f5a2.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/2467685eac99120f7d0d9f9fdd8f3598.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "What can you recommend me for dessert?",
-                    "fr": "Que pouvez-vous me recommander comme dessert ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/187951959a489dc1acc2af33fa1cb4d5.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/227dcedc4347009b196a5e52387328f1.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "What is your most popular dessert?",
-                    "fr": "Quel est votre dessert le plus appr\u00e9ci\u00e9 ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/0c59d3cf8b2c882f5201d500e5eb0318.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/1b7590a68b8f30b2b5df9959d681d817.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have a red house wine?",
-                    "fr": "Avez-vous un vin rouge maison ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/947dd7c837d2273d9d4571364e253eb0.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/bbb449bcba6aac5d1a403b8ee0854073.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "Do you have a local beer?",
-                    "fr": "Avez-vous une bi\u00e8re locale ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/3ee961a691a335a826ab06d999a0df9d.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/a1e6c9060b03f298f4e606ad520ba830.mp3"
-                }
-            },
-            {
-                "phrase": {
-                    "en": "What is your most popular beer?",
-                    "fr": "Quelle est votre bi\u00e8re la plus populaire ?"
-                },
-                "audio": {
-                    "en": "lessons/gen/french/restaurant_3/audio/e554595a43739d767c5138fb201f391e.mp3",
-                    "fr": "lessons/gen/french/restaurant_3/audio/7c17af0a85f9d8484f5bd43a82fbec2a.mp3"
                 }
             }
         ]

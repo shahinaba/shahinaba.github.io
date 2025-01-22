@@ -9,16 +9,8 @@
         "phrases_file" : "airport.txt"
       },
       {
-        "name" : "Airport_2",
-        "phrases_file" : "airport_2.txt"
-      },
-      {
         "name" : "Coffee Shop",
         "phrases_file" : "coffee_shop.txt"
-      },
-      {
-        "name" : "Coffee Shop 2",
-        "phrases_file" : "coffee_shop_2.txt"
       },
       {
         "name" : "Department Store",
@@ -33,6 +25,10 @@
         "phrases_file" : "hotel.txt"
       },
       {
+        "name" : "Information",
+        "phrases_file" : "information.txt"
+      },
+      {
         "name" : "Public Transportation",
         "phrases_file" : "public_transport.txt"
       },
@@ -42,19 +38,11 @@
       },
       {
         "name" : "Restaurant_2",
-        "phrases_file" : "restaurant.txt"
-      },
-      {
-        "name" : "Restaurant_3",
-        "phrases_file" : "restaurant_3.txt"
+        "phrases_file" : "restaurant_2.txt"
       },
       {
         "name" : "Tourit Info",
         "phrases_file" : "tourist_info.txt"
-      },
-      {
-        "name" : "Train Station",
-        "phrases_file" : "train_station.txt"
       },
       {
         "name" : "Months and Week Days",
@@ -83,6 +71,10 @@
       {
         "name" : "Verb: To Go/Going",
         "phrases_file" : "verb_go_going.txt"
+      },
+      {
+        "name" : "Verb: To Take",
+        "phrases_file" : "verb_to_take.txt"
       },
       {
         "name" : "Other",
