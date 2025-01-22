@@ -1,0 +1,37 @@
+I have a reservation under the name Paul.
+
+Can I check in, please?
+
+Do you have any available rooms?
+
+Can I have a room with a view, please?
+
+What time is check-out?
+
+Is breakfast included?
+
+Where is the dining area?
+
+Can I get a wake-up call at 7 a.m.?
+
+Is there Wi-Fi in the room?
+
+Where is the fitness center?
+
+Can I have extra towels, please?
+
+How do I call room service?
+
+What is the password for the Wi-Fi?
+
+Is there a safe in the room?
+
+Can you recommend any local restaurants?
+
+Can I store my luggage after check-out?
+
+Do you have a map of the city?
+
+Is there a shuttle service to the airport?
+
+Can I get a late check-out?

@@ -1,0 +1,38 @@
+Where is the check-in counter?
+Can I see your passport and ticket, please?
+Where is security check?
+Do I need to remove my shoes?
+What time does my flight depart?
+Which gate is my flight departing from?
+Is my flight on time?
+Where can I find baggage claim?
+Can you help me with my luggage?
+Is there a duty-free shop?
+Where is the nearest restroom?
+Can I have a window seat, please?
+Do you offer Wi-Fi on the plane?
+What is the baggage allowance?
+Can I change my seat assignment?
+Where is the airline lounge?
+Can I get an upgrade?
+Where is the taxi stand?
+Can I help you? 
+Could you help me, please
+Please show me your boarding pass. 
+ Your flight is now boarding at Gate 12. 
+ Please fasten your seatbelt. 
+ We have landed. 
+ I would like to check in. 
+ Where is the check-in desk? 
+ Do you have a checked bag or just carry-on luggage? 
+ Can I see your passport? 
+ Your flight is delayed for one hour. 
+ Empty your pockets, please. 
+ What is in your bag? 
+ What is the purpose of your stay? 
+ Do I need a visa to enter the country? 
+ May I see your passport please? 
+ Can I change my flight/reservation? 
+ Would you like to change your flight or reservation? 
+ Have a safe trip and thank you for flying with us. 
+ I hope you have a pleasant flight. 
