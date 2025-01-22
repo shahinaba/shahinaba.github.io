@@ -1789,6 +1789,211 @@ const genData = [
                 ]
             },
             {
+                "name": "Restaurant_2",
+                "phrases": [
+                    {
+                        "phrase": {
+                            "en": "Can I see the menu, please?",
+                            "fr": "Puis-je voir le menu, s'il vous pla\u00eet ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/1172428749d4e93d07ee2dc68d041c30.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/abc42191679fff4792c90287b8049034.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Do you have any daily specials?",
+                            "fr": "Avez-vous des plats du jour ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/cf18be2d38e0cd8ebc08373cf83fb03f.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/c80d6f90cbef5a5d843f26c962756439.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I get some water, please?",
+                            "fr": "Puis-je avoir de l'eau, s'il vous pla\u00eet ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/03dfe6ec387c28865dea911bad822700.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/87080433922a707f37a264606e06efd2.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "What do you recommend?",
+                            "fr": "Que recommandez-vous?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/89ff296882f9fec38ca4814e71995004.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/581c609289cf6fba78241403b8d97c06.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Is there a vegetarian option?",
+                            "fr": "Y a-t-il une option v\u00e9g\u00e9tarienne ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/04f495e3d794d335d517e4f773bf8df7.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/55e0a4354cba260dd879528eb37cf6b9.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Do you have gluten-free dishes?",
+                            "fr": "Avez-vous des plats sans gluten ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/d9eafa876b0f72247a2d09cbd9774379.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/647f04175232fe7bd33f8984695f1ee5.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I have this dish without pork?",
+                            "fr": "Puis-je avoir ce plat sans porc ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/ee752b36eda4c8c5ce039486c4f38264.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/6ea8baea5866d5d5fd32a479ee05e40b.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I order dessert?",
+                            "fr": "Puis-je commander un dessert ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/0928f122a80fabe940a2f565f392b955.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/d5b77968aed233d714e66db7e9bff37d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I have the bill, please?",
+                            "fr": "Puis-je avoir la facture, s'il vous pla\u00eet ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/a4de932bf7c7fb58228255e6174a7bdd.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/8780ed2b93ddc05254df6142f6fbeaac.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Do you accept credit cards?",
+                            "fr": "Acceptez-vous les cartes de cr\u00e9dit?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/cfbbaa0b9083de6bb2bb2153e001cb31.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/0509f3419578cfba3692b51a14195de0.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I make a reservation for two people?",
+                            "fr": "Puis-je faire une r\u00e9servation pour deux personnes ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/27280129ca2c9385da0371f19835c12d.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/e973e3687f415c80ae65369cd5dd5022.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Is there a kids\u2019 menu?",
+                            "fr": "Y a-t-il un menu pour enfants ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/aec71922a12823981207d716d80bfa77.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/924f1477492340a19c287862cf920a80.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Do you offer takeout?",
+                            "fr": "Proposez-vous des plats \u00e0 emporter ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/f4da800fc77d1a91df8053d3f2bc9e54.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/467c0c59244152f70af10e6e28c3535c.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I have this to-go?",
+                            "fr": "Puis-je avoir \u00e7a \u00e0 emporter ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/63e9db8c4043dfddee0f05b18794a372.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/06f41a87106784d007f0f44eab2158aa.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can you split the bill?",
+                            "fr": "Pouvez-vous partager la facture ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/fe11281c727ee77858a5101256f870fc.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/c4a68814acd191324196a158398eb31c.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Is service included?",
+                            "fr": "Le service est-il inclus ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/30af754a812c9e2060c147a24b879ea9.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/ff04a1568c3eadfa7de292616f0b2571.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I have an extra plate?",
+                            "fr": "Puis-je avoir une assiette suppl\u00e9mentaire ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/5b7e5d315d931c4e98688d79898aec39.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/6fbe70e8ce5abc6a2fb9f74297301151.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Do you serve alcohol?",
+                            "fr": "Serez-vous de l'alcool ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/7aecbde02971c02dd627a29290281d56.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/a48d9fa10cf764e455f0012923e6e9f9.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "What are your hours of operation?",
+                            "fr": "Quelles sont vos heures d'ouverture ?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/a2c863ed6e32289c5fffb1678f51b3be.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/5aca5d791a9bcf6a01b6346f3f84eb28.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Where is the restroom?",
+                            "fr": "O\u00f9 sont les toilettes\u00a0?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/restaurant/audio/69d7716cc4524b8532ef6235c899b633.mp3",
+                            "fr": "lessons/gen/french/restaurant/audio/0eb2d81484ed9e283910a64beacca61c.mp3"
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Tourit Info",
                 "phrases": [
                     {
