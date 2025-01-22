@@ -2049,6 +2049,56 @@
         "restaurant_2": [
             {
                 "phrase": {
+                    "en": "A table for two, please",
+                    "fr": "Une table pour deux, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/8eb3769231099b2f4d2489fb901949b1.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/8d9722ebd3bb9edcb327b39fcb91c545.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can we sit outside, please",
+                    "fr": "Pouvons-nous nous asseoir dehors, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/bffdcfa76f618c7c076ee17d38bf3219.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/05a73f2ac6f2132991823d2ea96898b2.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We would like a table by the window, please",
+                    "fr": "Nous aimerions une table pr\u00e8s de la fen\u00eatre, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/7e37b905ce450fff6b872cd89abf0c50.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/02cf7b609d738606382b618d4b800da2.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We would like to eat",
+                    "fr": "Nous aimerions manger"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/471ccc12100a359608c64acdef93d9ea.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/b1e6f46a911dc5ba78b8392c83a4cb61.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "We would like just drink",
+                    "fr": "Nous aimerions juste boire"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/9517659fe91f167f47364a4a94043482.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/b774c3b866111222eb11b7cad13b7d41.mp3"
+                }
+            },
+            {
+                "phrase": {
                     "en": "I have an allergy to shrimp and shrimp dressing",
                     "fr": "Je suis allergique aux crevettes et \u00e0 la vinaigrette aux crevettes"
                 },
@@ -2089,12 +2139,22 @@
             },
             {
                 "phrase": {
-                    "en": "Glass of tap water, please",
+                    "en": "A glass of tap water, please",
                     "fr": "Un verre d'eau du robinet, s'il vous pla\u00eet"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/d518f6632cd885c4122cea21af7d88be.mp3",
+                    "en": "lessons/gen/french/restaurant_2/audio/24d434fc4f672aed30a38ae40a86cbf0.mp3",
                     "fr": "lessons/gen/french/restaurant_2/audio/0da6741b4187137d99c8ab994cb70715.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "A glass of water, no ice, please",
+                    "fr": "Un verre d'eau, pas de glace, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/7c1042a2dbe6a33b94f483a3a1644d09.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/5d660e7887bf2d694f630a36137a3518.mp3"
                 }
             },
             {
@@ -2109,21 +2169,21 @@
             },
             {
                 "phrase": {
-                    "en": "Bottle of still water, please",
-                    "fr": "Bouteille d'eau plate, s'il vous pla\u00eet"
+                    "en": "A aottle of still water, please",
+                    "fr": "Un peu d'eau plate, s'il vous pla\u00eet"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/2fd36820894695e4fbd1df1a95ce2d86.mp3",
-                    "fr": "lessons/gen/french/restaurant_2/audio/d78a05eeaa028e1ecef3c2c75179c6eb.mp3"
+                    "en": "lessons/gen/french/restaurant_2/audio/25792487c36582840dde93d229d0411c.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/1fe8b453e35b0101782c9b9f61a5244c.mp3"
                 }
             },
             {
                 "phrase": {
-                    "en": "Bottle of sparkling water, please",
+                    "en": "A bottle of sparkling water, please",
                     "fr": "Une bouteille d'eau gazeuse, s'il vous pla\u00eet"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/43fc41d5e5bd8380203f6d9eecf6bb6c.mp3",
+                    "en": "lessons/gen/french/restaurant_2/audio/218bef4ae52d918d4506457b87435d9a.mp3",
                     "fr": "lessons/gen/french/restaurant_2/audio/0b016df0323404c8d639d7dc6fd9056e.mp3"
                 }
             },
@@ -2149,11 +2209,31 @@
             },
             {
                 "phrase": {
-                    "en": "I would like a chicken sandwich, french fry and green salad, please",
+                    "en": "What kind of fish do you have?",
+                    "fr": "Quel genre de poisson as-tu ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/b049ecd876eeb71c2d6cebee31bdd09e.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/6be2a32fecdb66fe148ddc7c711bb078.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Can you grill this fish?",
+                    "fr": "Pouvez-vous griller ce poisson ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/52ced263a56c70ed0196bb8f9b09b3c8.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/e0403d9c2b8c8ec9e6c05746f33111c2.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I would like a chicken sandwich, french fries and green salad, please",
                     "fr": "Je voudrais un sandwich au poulet, des frites et une salade verte, s'il vous pla\u00eet"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/37f2477086819ba751a3c4281b5bd613.mp3",
+                    "en": "lessons/gen/french/restaurant_2/audio/a0ccfb02377dae5da51a3633a708d05b.mp3",
                     "fr": "lessons/gen/french/restaurant_2/audio/a1c88f9dfc722968e8ccdb07f7365a78.mp3"
                 }
             },
@@ -2165,6 +2245,16 @@
                 "audio": {
                     "en": "lessons/gen/french/restaurant_2/audio/13d7bd3f29e2757d1a6adf98fd75f5a2.mp3",
                     "fr": "lessons/gen/french/restaurant_2/audio/2467685eac99120f7d0d9f9fdd8f3598.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "I would like a mix salad with grilled chicken",
+                    "fr": "Je voudrais une salade compos\u00e9e avec du poulet grill\u00e9"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/42fa857f5f3d7fa7225f7d2aa7c651f6.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/565e2afaa4e4f95926be776e3bb068d0.mp3"
                 }
             },
             {
@@ -2189,12 +2279,12 @@
             },
             {
                 "phrase": {
-                    "en": "Do you have a red house wine?",
-                    "fr": "Avez-vous un vin rouge maison ?"
+                    "en": "Do you have a house wine? Glass of a red wine, please",
+                    "fr": "Avez-vous un vin maison ? Un verre de vin rouge, s'il vous pla\u00eet"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/947dd7c837d2273d9d4571364e253eb0.mp3",
-                    "fr": "lessons/gen/french/restaurant_2/audio/bbb449bcba6aac5d1a403b8ee0854073.mp3"
+                    "en": "lessons/gen/french/restaurant_2/audio/9102617e578b51b0ffd67b760041b985.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/dfa3549fdef592e0a12267c0ffa086e3.mp3"
                 }
             },
             {
@@ -2209,12 +2299,22 @@
             },
             {
                 "phrase": {
-                    "en": "What is your most popular beer?",
-                    "fr": "Quelle est votre bi\u00e8re la plus populaire ?"
+                    "en": "What is your most popular draft beer?",
+                    "fr": "Quelle est votre bi\u00e8re pression la plus populaire ?"
                 },
                 "audio": {
-                    "en": "lessons/gen/french/restaurant_2/audio/e554595a43739d767c5138fb201f391e.mp3",
-                    "fr": "lessons/gen/french/restaurant_2/audio/7c17af0a85f9d8484f5bd43a82fbec2a.mp3"
+                    "en": "lessons/gen/french/restaurant_2/audio/38ff815c95c3ae592758aca4ef0a8fcb.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/4d5f0d58dbff7600e7efd6c35372ecec.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "The check, please",
+                    "fr": "L'addition, s'il vous pla\u00eet"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/restaurant_2/audio/0a8e5273d380ec290b1fd0b41847ab22.mp3",
+                    "fr": "lessons/gen/french/restaurant_2/audio/fed900c6fad2e06b4f507c440e78fb2c.mp3"
                 }
             }
         ],
