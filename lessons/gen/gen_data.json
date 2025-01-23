@@ -4387,6 +4387,258 @@
                     "fr": "lessons/gen/french/other/audio/717c50e501e9992108d977a207cde7d0.mp3"
                 }
             }
+        ],
+        "Questions": [
+            {
+                "phrase": {
+                    "en": "Do you like this book?",
+                    "fr": "Aimez-vous ce livre?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/8f6f853fecc2f721f2b8d09711112417.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/33a0455764b33b38d3bcdfef0c567d85.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Do you go to school?",
+                    "fr": "Vas-tu \u00e0 l'\u00e9cole ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/7c2251240774adbcfeb47a9e2ba69d2c.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/80cd4889101a48d89c59a38528a5b06f.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Are you a stoodent?",
+                    "fr": "\u00cates-vous un \u00e9tudiant?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/78125cc7c35607f0ba3be0a374dd0bbd.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/13deba28e90d207faa547928d8838105.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Are you maried?",
+                    "fr": "Es-tu mari\u00e9?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/0493f4d73e1dd980bf5bad1ae9b980c4.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/99d4b52f0520a66b28555f7a5f91b9c9.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Are you going to Paris?",
+                    "fr": "Tu vas \u00e0 Paris ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/7fad758ded88d3b55e492897df41489e.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/9545ab8653de59f07504acbeac0e4e72.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where do you work?",
+                    "fr": "O\u00f9 travaillez-vous?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/865233e42e09e334ad2fad48cf79b97e.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/2f28d90491de1909294ffab6ee55769e.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where do you live?",
+                    "fr": "O\u00f9  habites-tu?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/b035a70957f527931efc05d2b5758af9.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/309862a56bf0494b9ec28d4183993032.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is your luggage?",
+                    "fr": "O\u00f9 sont vos bagages ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/b66e2e9f1d7f2b67dd4a817ca8a97e5f.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/428acbd0d8d06b66c09ca87d451da262.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is my car?",
+                    "fr": "O\u00f9 est ma voiture ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/a48b2d012e507c8add9770005ceaffa3.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/c4f81a58efff69b5718eb2e81bdc9d01.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is city center?",
+                    "fr": "O\u00f9 est le centre-ville ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/f3d64036b3ff05e8d20248a2141ad23b.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/a21430ca5256916ad95f4a2cf508f16d.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is the nearest coffee shop?",
+                    "fr": "O\u00f9 se trouve le caf\u00e9 le plus proche ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/d4a28df8e0627a3ee8bb325e0e4d7303.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/2d629485049c8fcad3b4300f5aba36f3.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where is the library?",
+                    "fr": "O\u00f9 est la biblioth\u00e8que ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/665ad25e4b4931da49c547007039c764.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/661ce62f77a9b39303d2505ebf6ab929.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Where are my keys?",
+                    "fr": "O\u00f9 sont mes cl\u00e9s ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/76e4635612c59d2903c4150041c59a2c.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/fbe2760db0f03e7fbade98a92f010435.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "When is the next train?",
+                    "fr": "Quand part le prochain train?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/7fbf0c29238451ac3e852f8edf08db33.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/e1d6b7de2a1d76fbe0d2682bcae21481.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "When is your birthday?",
+                    "fr": "C'est quand votre anniversaire?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/91e685f4f09c5a0d8410de08407efb4b.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/79257b68d5057295e4bf5c9fcb8e31d7.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "When will the meeting end?",
+                    "fr": "Quand la r\u00e9union se terminera-t-elle ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/c957c0358f5d3666b40c1d0060c5bda5.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/48b723d2c616e11b47bdf0060ffe35fc.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Who is the president of US?",
+                    "fr": "Qui est le pr\u00e9sident des \u00c9tats-Unis ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/955871d4c45bf3a163a1a4d1e77e60a2.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/9f857ced410128322b50ec4b97671088.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Who is your best friend?",
+                    "fr": "Qui est ton meilleur ami ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/ffc5f7a056a4d43bebe1a78ed51b62a7.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/2a2d007d9a75741b764420647ba6d927.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "Who is in charge of this project?",
+                    "fr": "Qui est en charge de ce projet ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/627ddda537e93040fe2f66043b4e52df.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/a2585a6b709777b19e23075eedb0f240.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How do you make a cup of coffee?",
+                    "fr": "Comment pr\u00e9parer une tasse de caf\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/b5ccc67a2a227003a10fe7b44a242215.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/143f676e3f96b89d169856a3936e738c.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How many people are in the room?",
+                    "fr": "Combien de personnes y a-t-il dans la salle ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/eb08b8740f6fa92d12a66b637dc06439.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/9c5eb4b3184472be70c7a30f3668e88f.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "How are you feeling today?",
+                    "fr": "Comment te sens-tu aujourd\u2019hui ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/4ac2422b128ecd111f5def56164abdc4.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/82c190b38a6b15c674ea57a4857d3b2a.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What is your favorite color?",
+                    "fr": "Quelle est votre couleur pr\u00e9f\u00e9r\u00e9e ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/1e20a1ae79f4d3b54176d34e1b52ab68.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/6952f144397fd4d2b21c7f64f654991f.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What are you doing?",
+                    "fr": "Que fais-tu?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/5933280e2f64151c9bb7cb83e8b0858b.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/a40a326ea360a0457334b4778de09c48.mp3"
+                }
+            },
+            {
+                "phrase": {
+                    "en": "What is your favorite book?",
+                    "fr": "Quel est votre livre pr\u00e9f\u00e9r\u00e9 ?"
+                },
+                "audio": {
+                    "en": "lessons/gen/french/Questions/audio/24cefb1a6eddaacaab0d7de83acee23b.mp3",
+                    "fr": "lessons/gen/french/Questions/audio/9a2bfab78748ba6a0a85c6eae78f3345.mp3"
+                }
+            }
         ]
     }
 }

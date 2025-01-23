@@ -33,6 +33,10 @@
         "phrases_file" : "public_transport.txt"
       },
       {
+        "name" : "Questions",
+        "phrases_file" : "Questions.txt"
+      },
+      {
         "name" : "Restaurant",
         "phrases_file" : "restaurant.txt"
       },
