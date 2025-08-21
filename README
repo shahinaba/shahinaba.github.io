@@ -33,3 +33,5 @@ Adding a new Language
   }
 - The language_code needs to be set to the code for google translate language code. You can google this
 - The folder should be set to the name of the folder you created
+
+delete file gen_data.json to regenerate a new codes

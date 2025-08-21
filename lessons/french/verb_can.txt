@@ -1,6 +1,7 @@
-I can draw
-You can draw
-He/She can draw
-We can draw
-You can draw
-They can draw
+I can read
+You can read
+She can read
+He can read
+We can read
+You can read
+They can read

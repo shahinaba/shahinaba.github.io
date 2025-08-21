@@ -6,10 +6,6 @@ Can I get some water, please?
 
 What do you recommend?
 
-Is there a vegetarian option?
-
-Do you have gluten-free dishes?
-
 Can I have this dish without pork?
 
 Can I order dessert?
@@ -20,20 +16,16 @@ Do you accept credit cards?
 
 Can I make a reservation for two people?
 
-Is there a kids’ menu?
-
-Do you offer takeout?
+I would like to make a reservation for two. 6 oclock please.
 
 Can I have this to-go?
 
 Can you split the bill?
 
-Is service included?
+Is service fee included?
 
 Can I have an extra plate?
 
 Do you serve alcohol?
 
 What are your hours of operation?
-
-Where is the restroom?

@@ -1,7 +1,8 @@
-I take
-You take
-He/She takes
-We take
-You take
-They take
+I take a book
+You take a book
+She takes a book
+He takes a book
+We take a book
+You take a book
+They take a book
 
