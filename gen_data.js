@@ -494,11 +494,11 @@ const genData = [
                     {
                         "phrase": {
                             "en": "Do you have Wi-Fi?",
-                            "fr": "Do you have Wi-Fi?"
+                            "fr": "Avez-vous le Wi-Fi?"
                         },
                         "audio": {
                             "en": "lessons/gen/french/coffee_shop/audio/5e81cc7b70bd5120a58ed861ca65c625.mp3",
-                            "fr": "lessons/gen/french/coffee_shop/audio/5e81cc7b70bd5120a58ed861ca65c625.mp3"
+                            "fr": "lessons/gen/french/coffee_shop/audio/8fa5f53b2d73dc4b4a77da70b550916d.mp3"
                         }
                     },
                     {
@@ -689,6 +689,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/coffee_shop/audio/e7f9c90ffdf43ef9a68a35b6f0e34074.mp3",
                             "fr": "lessons/gen/french/coffee_shop/audio/eca027aa5dbc971fd0d0e07017c29b5b.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Glass of red wine, please",
+                            "fr": "Verre de vin rouge, s'il vous pla\u00eet"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/coffee_shop/audio/40b8986cb8f35caf77139088ab11b8eb.mp3",
+                            "fr": "lessons/gen/french/coffee_shop/audio/d77d852d12d6e05aa2f4efb81a903347.mp3"
                         }
                     },
                     {
@@ -1168,6 +1178,16 @@ const genData = [
                     },
                     {
                         "phrase": {
+                            "en": "Can I check in, please?",
+                            "fr": "Puis-je m'enregistrer, s'il vous pla\u00eet?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/hotel/audio/284594a6bf01bb9138fd96ce2369f5c4.mp3",
+                            "fr": "lessons/gen/french/hotel/audio/30968a8663f76a146e3ff715280abd5d.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
                             "en": "Do you have any available rooms?",
                             "fr": "Avez-vous des chambres disponibles?"
                         },
@@ -1244,6 +1264,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/hotel/audio/5c820733a33defdc5601229b531f356d.mp3",
                             "fr": "lessons/gen/french/hotel/audio/f169eccb8fe632cfeae5d6ee3bcb5640.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Can I have extra towels, please?",
+                            "fr": "Puis-je avoir des serviettes suppl\u00e9mentaires, s'il vous pla\u00eet?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/hotel/audio/2e8c7b5fdcf4aa3143de62f272a47984.mp3",
+                            "fr": "lessons/gen/french/hotel/audio/777ae2c498e93e6cd774240221b89d61.mp3"
                         }
                     },
                     {
@@ -1419,6 +1449,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/information/audio/d802bd4002e8b654236f2f858aebed15.mp3",
                             "fr": "lessons/gen/french/information/audio/d9dcd6cf3a744cc010520fe420bcbaa8.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "How does this work?",
+                            "fr": "Comment cela marche-t-il?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/information/audio/3cf9064d67a8acc754449d33a3508603.mp3",
+                            "fr": "lessons/gen/french/information/audio/294b6bd6a15e97a33e7d4343ba92ac99.mp3"
                         }
                     },
                     {
@@ -1854,11 +1894,11 @@ const genData = [
                     {
                         "phrase": {
                             "en": "Are you a stoodent?",
-                            "fr": "\u00cates-vous un stocatif?"
+                            "fr": "\u00cates-vous un stable?"
                         },
                         "audio": {
                             "en": "lessons/gen/french/Questions/audio/78125cc7c35607f0ba3be0a374dd0bbd.mp3",
-                            "fr": "lessons/gen/french/Questions/audio/3c348fe8b44c396cac9ca4626c1d5d30.mp3"
+                            "fr": "lessons/gen/french/Questions/audio/1a98d94c077aab367a74df38c1a7ec93.mp3"
                         }
                     },
                     {
@@ -1869,6 +1909,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/Questions/audio/0493f4d73e1dd980bf5bad1ae9b980c4.mp3",
                             "fr": "lessons/gen/french/Questions/audio/99d4b52f0520a66b28555f7a5f91b9c9.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "Are you going to Paris?",
+                            "fr": "Allez-vous \u00e0 Paris?"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/Questions/audio/7fad758ded88d3b55e492897df41489e.mp3",
+                            "fr": "lessons/gen/french/Questions/audio/4bd7b9789618d8e86cfced44cf77f33c.mp3"
                         }
                     },
                     {
@@ -2293,12 +2343,12 @@ const genData = [
                     },
                     {
                         "phrase": {
-                            "en": "I have an allergy to shrimp and shrimp souce",
-                            "fr": "J'ai une allergie aux crevettes et \u00e0 la sauce aux crevettes"
+                            "en": "She has an allergy to shrimp and shrimp sauce",
+                            "fr": "Elle a une allergie aux crevettes et \u00e0 la sauce aux crevettes"
                         },
                         "audio": {
-                            "en": "lessons/gen/french/restaurant_2/audio/37c4ad34752c3db6263b89cd98b4784f.mp3",
-                            "fr": "lessons/gen/french/restaurant_2/audio/f6856b7d137b8f5d9be92142555d5905.mp3"
+                            "en": "lessons/gen/french/restaurant_2/audio/d9869f91e2a503eac4f5d4ea57c4c7df.mp3",
+                            "fr": "lessons/gen/french/restaurant_2/audio/96a0e20b8aa5a9642f9a39ac1c8975a5.mp3"
                         }
                     },
                     {
@@ -2679,11 +2729,11 @@ const genData = [
                     {
                         "phrase": {
                             "en": "Is there a public transportation pass I can buy?",
-                            "fr": "Y a-t-il un laissez-passer de transport public que je peux acheter?"
+                            "fr": "Y a-t-il un laissez-passer en transports en commun que je peux acheter?"
                         },
                         "audio": {
                             "en": "lessons/gen/french/tourist_info/audio/3c6e729d4ab32c9cbba0e59b0a65f616.mp3",
-                            "fr": "lessons/gen/french/tourist_info/audio/fe6e894597057dfc33527403dbeb99b1.mp3"
+                            "fr": "lessons/gen/french/tourist_info/audio/d6ffb3260c7ebc88dcaad0fecb65ee78.mp3"
                         }
                     },
                     {
@@ -2933,6 +2983,16 @@ const genData = [
                     },
                     {
                         "phrase": {
+                            "en": "Wednesday",
+                            "fr": "Mercredi"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/months_and_week_days/audio/796c163589f295373e171842f37265d5.mp3",
+                            "fr": "lessons/gen/french/months_and_week_days/audio/90cfad83a7819562473330e540f88a60.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
                             "en": "Thursday",
                             "fr": "Jeudi"
                         },
@@ -2984,6 +3044,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/numbers/audio/f97c5d29941bfb1b2fdab0874906ab82.mp3",
                             "fr": "lessons/gen/french/numbers/audio/0674272bac0715f803e382b5aa437e08.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "two",
+                            "fr": "deux"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/numbers/audio/b8a9f715dbb64fd5c56e7783c6820a61.mp3",
+                            "fr": "lessons/gen/french/numbers/audio/f83815aedaa1b6bf4211e85910e6bc82.mp3"
                         }
                     },
                     {
@@ -4554,6 +4624,16 @@ const genData = [
                         "audio": {
                             "en": "lessons/gen/french/other/audio/179b5b4d16a31ca884c75146c1309a0b.mp3",
                             "fr": "lessons/gen/french/other/audio/0b0fc25bf158f550c335486b1a8d2f4b.mp3"
+                        }
+                    },
+                    {
+                        "phrase": {
+                            "en": "this is a very interesting apartment building",
+                            "fr": "C'est un immeuble tr\u00e8s int\u00e9ressant"
+                        },
+                        "audio": {
+                            "en": "lessons/gen/french/other/audio/aa6a3736873438855e5be3147da20272.mp3",
+                            "fr": "lessons/gen/french/other/audio/8e1592630b1faf7ca4bd37f0e229732b.mp3"
                         }
                     },
                     {
